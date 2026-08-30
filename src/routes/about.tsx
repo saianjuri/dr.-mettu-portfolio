@@ -89,13 +89,14 @@ function About() {
               <div aria-hidden="true" className="mt-7 h-px w-full max-w-md bg-border/70" />
 
               <p className="mt-6 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
-                Dr. Sai Anjuri is a Doctor of Pharmacy professional with a multidisciplinary
-                interest spanning clinical care, fitness, nutrition, and creative photography.
+                Dr. Sai Anjuri is a Doctor of Pharmacy professional Passionate About Patient Care And Research | Skilled
+                In Clinical Practice | Evidence-Based Medication Management |, fitness, nutrition, and creative
+                photography.
               </p>
               <p className="mt-4 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
-                His PharmD background provides an evidence-based foundation for his approach to
-                health and wellbeing, while his experience in fitness, nutrition, and photography
-                allows him to explore health and personal development from different perspectives.
+                His PharmD background provides an evidence-based foundation for his approach to health and wellbeing,
+                while his experience in fitness, nutrition, and photography allows him to explore health and personal
+                development from different perspectives.
               </p>
             </Reveal>
 
@@ -107,10 +108,7 @@ function About() {
                   className="absolute inset-x-[10%] bottom-[-3%] h-6 rounded-[50%] bg-foreground/[0.07] blur-xl"
                 />
                 {/* small orange accent mark */}
-                <span
-                  aria-hidden="true"
-                  className="absolute -right-2 top-8 h-14 w-[5px] rounded-full bg-accent"
-                />
+                <span aria-hidden="true" className="absolute -right-2 top-8 h-14 w-[5px] rounded-full bg-accent" />
                 <div className="relative overflow-hidden rounded-[1.25rem] border border-border/70 shadow-[var(--shadow-card)]">
                   <img
                     src={portraitAsset.url}
@@ -161,9 +159,7 @@ function About() {
                     <h3 className="text-[1.05rem] font-extrabold uppercase tracking-[0.06em] text-foreground">
                       {d.label}
                     </h3>
-                    <p className="max-w-[52ch] text-[0.9375rem] leading-relaxed text-muted-foreground">
-                      {d.text}
-                    </p>
+                    <p className="max-w-[52ch] text-[0.9375rem] leading-relaxed text-muted-foreground">{d.text}</p>
                   </li>
                 ))}
               </ol>
@@ -194,9 +190,7 @@ function About() {
                     <GraduationCap size={20} aria-hidden="true" />
                   </span>
                   <div className="min-w-0">
-                    <h3 className="text-[1.125rem] font-extrabold tracking-[-0.01em]">
-                      Doctor of Pharmacy (PharmD)
-                    </h3>
+                    <h3 className="text-[1.125rem] font-extrabold tracking-[-0.01em]">Doctor of Pharmacy (PharmD)</h3>
                     <dl className="mt-4 divide-y divide-border/70 border-y border-border/70">
                       <div className="grid gap-1 py-3 sm:grid-cols-[110px_minmax(0,1fr)] sm:gap-6">
                         <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
@@ -247,8 +241,8 @@ function About() {
 
               <div className="min-w-0">
                 <h2 className="max-w-[38ch] text-[1.45rem] font-extrabold leading-[1.25] tracking-[-0.015em] lg:text-[1.9rem]">
-                  From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through
-                  Effective Counselling Strategies
+                  From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through Effective Counselling
+                  Strategies
                 </h2>
 
                 <dl className="mt-8 divide-y divide-border/70 border-y border-border/70">
@@ -260,16 +254,11 @@ function About() {
                     },
                     { label: "Institution", text: "Marri Laxman Reddy Institute of Pharmacy" },
                   ].map((item) => (
-                    <div
-                      key={item.label}
-                      className="grid gap-1 py-3.5 sm:grid-cols-[130px_minmax(0,1fr)] sm:gap-6"
-                    >
+                    <div key={item.label} className="grid gap-1 py-3.5 sm:grid-cols-[130px_minmax(0,1fr)] sm:gap-6">
                       <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                         {item.label}
                       </dt>
-                      <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">
-                        {item.text}
-                      </dd>
+                      <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">{item.text}</dd>
                     </div>
                   ))}
                 </dl>
@@ -302,9 +291,7 @@ function About() {
                 <Reveal key={p.title} delay={i * 80}>
                   <div className="border-t-2 border-teal pt-5">
                     <h3 className="text-[1.05rem] font-extrabold tracking-[-0.01em]">{p.title}</h3>
-                    <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground">
-                      {p.text}
-                    </p>
+                    <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground">{p.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -316,10 +303,7 @@ function About() {
         <section className="border-t border-border/60 bg-card/40">
           <div className="mx-auto max-w-[1200px] px-6 py-20 lg:px-8 lg:py-28">
             <Reveal className="mx-auto max-w-3xl text-center">
-              <span
-                aria-hidden="true"
-                className="mx-auto block h-[3px] w-14 rounded-full bg-accent"
-              />
+              <span aria-hidden="true" className="mx-auto block h-[3px] w-14 rounded-full bg-accent" />
               <p className="mt-8 text-[1.55rem] font-bold leading-[1.4] tracking-[-0.015em] text-foreground sm:text-[1.9rem] lg:text-[2.25rem]">
                 Health is not limited to one discipline.
                 <br />
