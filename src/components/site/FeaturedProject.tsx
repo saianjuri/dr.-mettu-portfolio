@@ -1,6 +1,7 @@
-import { ArrowRight, GraduationCap, Building2, BookOpen, ImagePlus } from "lucide-react";
+import { ArrowRight, GraduationCap, Building2, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
+import dissertationCover from "@/assets/dissertation-cover.png.asset.json";
 
 const meta = [
   { icon: BookOpen, text: "Doctor of Pharmacy (PharmD) – Dissertation" },
@@ -16,14 +17,14 @@ export function FeaturedProject() {
       </Reveal>
 
       <Reveal delay={90} className="mt-8">
-        <div className="grid gap-8 rounded-2xl border border-border/70 bg-card p-6 shadow-[var(--shadow-card)] lg:grid-cols-[220px_minmax(0,1fr)_260px] lg:gap-10 lg:p-8">
-          {/* PLACEHOLDER — replace with the dissertation cover image */}
-          <div className="flex aspect-[3/4] w-full flex-col items-center justify-center gap-2 rounded-lg border border-border bg-secondary px-5 text-center">
-            <ImagePlus className="text-teal" size={26} aria-hidden="true" />
-            <p className="text-xs font-semibold text-foreground/80">Dissertation cover</p>
-            <p className="text-[0.7rem] leading-relaxed text-muted-foreground">
-              Add the project cover image here.
-            </p>
+        <div className="grid gap-8 rounded-2xl border border-border/70 bg-card p-6 shadow-[var(--shadow-card)] lg:grid-cols-[210px_minmax(0,1fr)_260px] lg:gap-10 lg:p-8 lg:items-center">
+          <div className="mx-auto w-full max-w-[210px] lg:mx-0">
+            <img
+              src={dissertationCover.url}
+              alt="Dissertation cover — From Prevalence to Prevention, PharmD project report"
+              loading="lazy"
+              className="w-full rounded-md border border-border/70 shadow-[var(--shadow-card)]"
+            />
           </div>
 
           <div className="min-w-0">

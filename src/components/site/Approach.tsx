@@ -2,13 +2,17 @@ import { Reveal } from "./Reveal";
 
 export function Approach() {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-5 py-20 lg:py-28">
-      <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+    <section id="about" className="mx-auto max-w-6xl px-5 py-16 lg:py-20">
+      <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <Reveal>
           <p className="eyebrow text-teal">About</p>
           <h2 className="mt-4 max-w-md text-3xl font-extrabold leading-tight lg:text-[2.5rem]">
             Healthcare, Fitness &amp; Creative Expression
           </h2>
+          <span aria-hidden="true" className="mt-6 flex items-center gap-1.5">
+            <span className="h-[3px] w-10 rounded-full bg-teal" />
+            <span className="h-[3px] w-4 rounded-full bg-accent" />
+          </span>
         </Reveal>
         <Reveal delay={100} className="space-y-5 text-[1.02rem] leading-relaxed text-muted-foreground">
           <p>
