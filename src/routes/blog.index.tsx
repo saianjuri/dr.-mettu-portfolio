@@ -125,7 +125,6 @@ function Journal() {
                       src={featured.image}
                       alt={featured.title}
                       category={featured.category}
-                      label={`${featured.categoryLabel} — Journal`}
                       ratio="aspect-[5/4]"
                     />
                   </Link>
@@ -189,7 +188,6 @@ function Journal() {
                           src={post.image}
                           alt={post.title}
                           category={post.category}
-                          label={post.categoryLabel}
                         />
                       </Link>
 
