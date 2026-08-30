@@ -67,6 +67,32 @@ const principles = [
   },
 ];
 
+const education = [
+  {
+    level: "Schooling",
+    title: "Secondary Education (CBSE)",
+    details: [
+      { label: "School", value: "J. Sikile School, Narsapur Roypeta" },
+      { label: "Board", value: "CBSE" },
+    ],
+  },
+  {
+    level: "Intermediate",
+    title: "Intermediate Education",
+    details: [
+      { label: "College", value: "Chaitanya Junior College, Palakollu" },
+    ],
+  },
+  {
+    level: "Undergraduate",
+    title: "Doctor of Pharmacy (PharmD)",
+    details: [
+      { label: "University", value: "Jawaharlal Nehru Technological University, Hyderabad" },
+      { label: "Institution", value: "Marri Laxman Reddy Institute of Pharmacy" },
+    ],
+  },
+];
+
 function About() {
   return (
     <div className="min-h-screen bg-background">
