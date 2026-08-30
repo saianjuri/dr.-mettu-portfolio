@@ -28,7 +28,7 @@ export function Footer() {
             <Instagram size={16} aria-hidden="true" /> Instagram
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/dr-sai-anjuri-36802a405"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-2 transition-colors hover:text-teal-deep"
