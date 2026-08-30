@@ -182,35 +182,34 @@ function About() {
               </Reveal>
 
               <Reveal delay={90}>
-                <div className="flex gap-5 border-l-2 border-teal pl-6">
-                  <span
-                    aria-hidden="true"
-                    className="mt-1 grid h-11 w-11 shrink-0 place-items-center rounded-full border border-teal/40 bg-ivory text-teal-deep"
-                  >
-                    <GraduationCap size={20} aria-hidden="true" />
-                  </span>
-                  <div className="min-w-0">
-                    <h3 className="text-[1.125rem] font-extrabold tracking-[-0.01em]">Doctor of Pharmacy (PharmD)</h3>
-                    <dl className="mt-4 divide-y divide-border/70 border-y border-border/70">
-                      <div className="grid gap-1 py-3 sm:grid-cols-[110px_minmax(0,1fr)] sm:gap-6">
-                        <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-                          University
-                        </dt>
-                        <dd className="text-[1rem] leading-relaxed text-foreground/85">
-                          Jawaharlal Nehru Technological University, Hyderabad
-                        </dd>
+                <ol className="flex flex-col gap-8 border-l-2 border-teal pl-6">
+                  {education.map((edu) => (
+                    <li key={edu.level} className="flex gap-5">
+                      <span
+                        aria-hidden="true"
+                        className="mt-1 grid h-11 w-11 shrink-0 place-items-center rounded-full border border-teal/40 bg-ivory text-teal-deep"
+                      >
+                        <GraduationCap size={20} aria-hidden="true" />
+                      </span>
+                      <div className="min-w-0">
+                        <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                          {edu.level}
+                        </p>
+                        <h3 className="mt-1 text-[1.125rem] font-extrabold tracking-[-0.01em]">{edu.title}</h3>
+                        <dl className="mt-3 divide-y divide-border/70 border-y border-border/70">
+                          {edu.details.map((item) => (
+                            <div key={item.label} className="grid gap-1 py-3 sm:grid-cols-[110px_minmax(0,1fr)] sm:gap-6">
+                              <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                                {item.label}
+                              </dt>
+                              <dd className="text-[1rem] leading-relaxed text-foreground/85">{item.value}</dd>
+                            </div>
+                          ))}
+                        </dl>
                       </div>
-                      <div className="grid gap-1 py-3 sm:grid-cols-[110px_minmax(0,1fr)] sm:gap-6">
-                        <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-                          Institution
-                        </dt>
-                        <dd className="text-[1rem] leading-relaxed text-foreground/85">
-                          Marri Laxman Reddy Institute of Pharmacy
-                        </dd>
-                      </div>
-                    </dl>
-                  </div>
-                </div>
+                    </li>
+                  ))}
+                </ol>
               </Reveal>
             </div>
           </div>
