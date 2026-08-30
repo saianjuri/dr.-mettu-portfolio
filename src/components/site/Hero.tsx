@@ -48,7 +48,7 @@ export function Hero() {
           <div className="relative mx-auto aspect-square w-full max-w-[432px]">
             <span
               aria-hidden="true"
-              className="absolute inset-[-4%] rounded-full border-[7px] border-transparent border-t-accent border-r-accent/40"
+              className="absolute inset-[-4%] rounded-full border-[7px] border-transparent border-t-accent"
               style={{ transform: "rotate(48deg)" }}
             />
             <div className="absolute inset-0 overflow-hidden rounded-full border-[6px] border-teal bg-secondary">
