@@ -130,9 +130,10 @@ function DissertationCaseStudy() {
               </Link>
             </Reveal>
 
-            <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:gap-16">
+            <div className="mt-10 grid items-center gap-10 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)] lg:gap-16">
               <Reveal>
-                <figure className="mx-auto w-full max-w-[360px] lg:mx-0">
+                <figure className="mx-auto w-full max-w-[320px] lg:mx-0">
+
                   <img
                     src={dissertationCover.url}
                     alt="Dissertation cover — From Prevalence to Prevention, PharmD project report"
