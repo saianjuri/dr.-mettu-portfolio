@@ -352,9 +352,9 @@ function About() {
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 <Button variant="orange" size="xl" className="w-full sm:w-auto" asChild>
-                  <a href="mailto:hello@drsaianjuri.com">
+                  <Link to="/contact">
                     Book a Consultation <ArrowRight aria-hidden="true" />
-                  </a>
+                  </Link>
                 </Button>
                 <Button
                   variant="outlineAccent"

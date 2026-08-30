@@ -8,7 +8,7 @@ const links: { label: string; to: string; hash?: string }[] = [
   { label: "Expertise", to: "/expertise" },
   { label: "Portfolio", to: "/portfolio" },
   { label: "Blog", to: "/blog" },
-  { label: "Contact", to: "/", hash: "contact" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export function Navbar() {
@@ -42,9 +42,9 @@ export function Navbar() {
 
         <div className="flex shrink-0 items-center gap-2">
           <Button variant="orange" size="default" className="hidden rounded-lg px-5 lg:inline-flex" asChild>
-            <a href="mailto:hello@drsaianjuri.com">
+            <Link to="/contact">
               Book Consultation <ArrowRight aria-hidden="true" />
-            </a>
+            </Link>
           </Button>
           <button
             type="button"
@@ -76,9 +76,9 @@ export function Navbar() {
             ))}
             <li className="pt-3">
               <Button variant="orange" size="lg" className="w-full rounded-lg" asChild>
-                <a href="mailto:hello@drsaianjuri.com" onClick={() => setOpen(false)}>
+                <Link to="/contact" onClick={() => setOpen(false)}>
                   Book Consultation <ArrowRight aria-hidden="true" />
-                </a>
+                </Link>
               </Button>
             </li>
           </ul>

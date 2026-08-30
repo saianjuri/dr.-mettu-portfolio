@@ -284,9 +284,9 @@ function DissertationCaseStudy() {
                 <span aria-hidden="true" className="mt-5 block h-px w-16 bg-primary-foreground/30" />
               </div>
               <Button variant="orange" size="xl" className="w-full sm:w-auto" asChild>
-                <a href="mailto:hello@drsaianjuri.com">
+                <Link to="/contact">
                   Contact <ArrowRight aria-hidden="true" />
-                </a>
+                </Link>
               </Button>
             </div>
           </Reveal>

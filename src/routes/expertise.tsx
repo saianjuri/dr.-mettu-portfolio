@@ -407,9 +407,9 @@ function Expertise() {
                   className="w-full border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground sm:w-auto"
                   asChild
                 >
-                  <a href="mailto:hello@drsaianjuri.com">
+                  <Link to="/contact">
                     Get In Touch <ArrowRight aria-hidden="true" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

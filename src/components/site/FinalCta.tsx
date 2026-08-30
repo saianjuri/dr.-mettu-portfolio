@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
@@ -20,9 +21,9 @@ export function FinalCta() {
             </p>
           </div>
           <Button variant="orange" size="xl" className="w-full sm:w-auto" asChild>
-            <a href="mailto:hello@drsaianjuri.com">
+            <Link to="/contact">
               Book a Consultation <ArrowRight aria-hidden="true" />
-            </a>
+            </Link>
           </Button>
         </div>
       </Reveal>
