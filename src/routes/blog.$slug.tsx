@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { Reveal } from "@/components/site/Reveal";
+import { ArticleImage } from "@/components/site/ArticleImage";
 import { getPost, getRelated } from "@/lib/blog-data";
 import portraitAsset from "@/assets/portrait-saianjuri.png.asset.json";
 
@@ -28,6 +29,21 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: d },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: `/blog/${loaderData.post.slug}` }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: loaderData.post.title,
+            description: d,
+            author: { "@type": "Person", name: "Dr. Sai Anjuri" },
+            datePublished: loaderData.post.date,
+            articleSection: loaderData.post.categoryLabel,
+          }),
+        },
       ],
     };
   },
@@ -86,73 +102,77 @@ function ArticleDetail() {
                 <span>{post.date}</span>
                 <span aria-hidden="true" className="h-3 w-px bg-border" />
                 <span>{post.readingTime}</span>
-                <span aria-hidden="true" className="h-3 w-px bg-border" />
-                <span className="text-accent">Draft</span>
               </div>
             </Reveal>
           </div>
 
-          {/* ————— Hero image area (neutral placeholder) ————— */}
+          {/* ————— Hero image ————— */}
           <div className="mx-auto max-w-[1000px] px-6 lg:px-8">
             <Reveal delay={60}>
-              <figure>
-                <div
-                  aria-hidden="true"
-                  className="relative flex aspect-[16/9] items-end overflow-hidden rounded-sm border border-border/70 bg-secondary"
-                >
-                  <span className="absolute left-0 top-0 h-full w-[3px] bg-teal/70" />
-                  <span className="absolute right-8 top-8 h-12 w-12 rounded-full border border-accent/45" />
-                  <span className="px-7 pb-7 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                    Article image — to be added
-                  </span>
-                </div>
-                <figcaption className="mt-3 text-[0.75rem] text-muted-foreground">
-                  Placeholder — a real photograph will accompany this article.
-                </figcaption>
-              </figure>
+              <ArticleImage
+                src={post.image}
+                alt={post.title}
+                category={post.category}
+                ratio="aspect-[16/9]"
+              />
             </Reveal>
           </div>
 
           {/* ————— Body ————— */}
           <div className="mx-auto max-w-[720px] px-6 lg:px-8 section-lg">
-            <Reveal className="text-[1.0625rem] leading-[1.85] text-foreground/85">
-              <p className="text-[1.15rem] leading-[1.7] text-muted-foreground">{post.excerpt}</p>
+            <Reveal className="text-[1.0625rem] leading-[1.8] text-foreground/85">
+              <p className="text-[1.15rem] leading-[1.7] text-muted-foreground">{post.intro}</p>
 
               <span aria-hidden="true" className="my-10 block h-px w-full bg-border/70" />
 
-              <p>
-                This article is a draft placeholder. The full text has not been written yet — the
-                structure below shows how the published piece will be laid out.
-              </p>
+              {post.sections.map((section) => (
+                <section key={section.heading} className="mt-10 first:mt-0">
+                  <h2 className="heading-card">{section.heading}</h2>
+                  {section.paragraphs.map((p) => (
+                    <p key={p.slice(0, 40)} className="mt-5">
+                      {p}
+                    </p>
+                  ))}
+                  {section.bullets ? (
+                    <ul className="mt-6 space-y-2.5 pl-5">
+                      {section.bullets.map((b) => (
+                        <li key={b} className="list-disc marker:text-teal">
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </section>
+              ))}
 
-              <h2 className="mt-10 heading-card">
-                Section heading
-              </h2>
-              <p className="mt-4">
-                Body paragraphs will appear here at a comfortable reading width, with the same
-                typography used across the rest of the site.
-              </p>
+              <div className="mt-14 border-l-2 border-accent bg-secondary/50 py-7 pl-6 pr-6">
+                <h2 className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  Practical Takeaways
+                </h2>
+                <ul className="mt-5 space-y-3">
+                  {post.takeaways.map((t) => (
+                    <li key={t} className="flex gap-3 text-[1rem] leading-[1.7]">
+                      <span aria-hidden="true" className="mt-[0.6em] h-px w-4 shrink-0 bg-teal" />
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <ul className="mt-6 space-y-2.5 pl-5">
-                {["A supporting point", "Another supporting point", "A closing point"].map((t) => (
-                  <li key={t} className="list-disc marker:text-teal">
-                    {t}
-                  </li>
-                ))}
-              </ul>
+              <h2 className="mt-14 heading-card">Closing thoughts</h2>
+              {post.conclusion.map((p) => (
+                <p key={p.slice(0, 40)} className="mt-5">
+                  {p}
+                </p>
+              ))}
 
-              <blockquote className="my-10 border-l-2 border-accent pl-6 text-[1.1rem] italic leading-[1.7] text-foreground/80">
-                Pull quotes are supported and will be used sparingly.
-              </blockquote>
-
-              <h2 className="mt-10 heading-card">
-                Closing thoughts
-              </h2>
-              <p className="mt-4">
-                A short conclusion will close the piece. Nothing here should be read as medical
-                advice; the journal shares perspective and experience only.
-              </p>
+              {post.disclaimer ? (
+                <p className="mt-10 border-t border-border/70 pt-6 text-[0.875rem] italic leading-[1.7] text-muted-foreground">
+                  {post.disclaimer}
+                </p>
+              ) : null}
             </Reveal>
+
 
             {/* ————— Author ————— */}
             <Reveal delay={70}>
