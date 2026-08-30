@@ -9,7 +9,7 @@ const portraitUrl = portraitAsset.url;
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-6 pb-16 pt-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16 lg:px-8 lg:pb-24 lg:pt-20">
+      <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16 lg:px-8 hero-pad">
         <Reveal className="min-w-0">
           <p className="eyebrow flex items-center gap-3 text-accent">
             <span aria-hidden="true" className="h-px w-7 bg-accent/60" />

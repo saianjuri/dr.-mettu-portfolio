@@ -114,7 +114,7 @@ function ArticleDetail() {
           </div>
 
           {/* ————— Body ————— */}
-          <div className="mx-auto max-w-[720px] px-6 py-14 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[720px] px-6 lg:px-8 section-lg">
             <Reveal className="text-[1.0625rem] leading-[1.85] text-foreground/85">
               <p className="text-[1.15rem] leading-[1.7] text-muted-foreground">{post.excerpt}</p>
 

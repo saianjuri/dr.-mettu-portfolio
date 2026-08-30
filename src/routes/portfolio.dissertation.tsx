@@ -120,7 +120,7 @@ function DissertationCaseStudy() {
       <Navbar />
       <main>
         <section>
-          <div className="mx-auto max-w-[1200px] px-6 pb-14 pt-10 lg:px-8 lg:pb-20 lg:pt-16">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 hero-pad">
             <Reveal>
               <Link
                 to="/portfolio"

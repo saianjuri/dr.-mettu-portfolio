@@ -53,7 +53,7 @@ function Journal() {
       <main>
         {/* ————— Hero ————— */}
         <section>
-          <div className="mx-auto max-w-[1200px] px-6 pb-12 pt-12 lg:px-8 lg:pb-14 lg:pt-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 hero-pad">
             <Reveal className="max-w-3xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
@@ -107,7 +107,7 @@ function Journal() {
         {/* ————— Featured ————— */}
         {featured ? (
           <section>
-            <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-[6.5rem]">
+            <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
               <Reveal>
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   Featured
@@ -166,7 +166,7 @@ function Journal() {
 
         {/* ————— Article grid ————— */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-[6.5rem]">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal>
               <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Latest Writing
@@ -232,7 +232,7 @@ function Journal() {
 
         {/* ————— Stay curious ————— */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-[5.5rem]">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-md">
             <Reveal>
               <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-14">
                 <div className="min-w-0">
