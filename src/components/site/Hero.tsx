@@ -1,6 +1,9 @@
-import { ArrowRight, ImagePlus } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
+import portraitAsset from "@/assets/portrait-drmettu.png.asset.json";
+
+const portraitUrl = portraitAsset.url;
 
 export function Hero() {
   return (
@@ -16,12 +19,12 @@ export function Hero() {
             <span className="text-teal-deep">Dr. Mettu</span> PharmD
             <span className="mx-2 font-light text-border">|</span>
             <br className="hidden sm:block" />
-            Fitness Mentor &amp; Photographer
+            Fitness Mentor & Photographer
           </h1>
 
           <p className="mt-6 max-w-xl text-[0.95rem] font-semibold leading-relaxed text-foreground/85">
-            PharmD <span className="text-teal">•</span> 7+ Years Fitness &amp; Bodybuilding Expert{" "}
-            <span className="text-teal">•</span> Diet Planner <span className="text-teal">•</span>{" "}
+            PharmD <span className="text-teal">&bull;</span> 7+ Years Fitness & Bodybuilding Expert{" "}
+            <span className="text-teal">&bull;</span> Diet Planner <span className="text-teal">&bull;</span>{" "}
             Creative Photographer
           </p>
 
@@ -52,22 +55,13 @@ export function Hero() {
               style={{ transform: "rotate(48deg)" }}
             />
             <div className="absolute inset-0 overflow-hidden rounded-full border-[6px] border-teal bg-secondary">
-              {/*
-                PORTRAIT: replace the placeholder below with:
-                <img
-                  src={portraitUrl}
-                  alt="Portrait of Dr. Mettu"
-                  className="h-full w-full object-cover object-[center_22%]"
-                />
-                object-cover + top-biased centering keeps the face framed without cropping the head.
-              */}
-              <div className="flex h-full w-full flex-col items-center justify-center gap-3 px-8 text-center">
-                <ImagePlus className="text-teal" size={34} aria-hidden="true" />
-                <p className="text-sm font-semibold text-foreground/80">Portrait placeholder</p>
-                <p className="text-xs leading-relaxed text-muted-foreground">
-                  Add Dr. Mettu&apos;s professional photograph here.
-                </p>
-              </div>
+              <img
+                src={portraitUrl}
+                alt="Portrait of Dr. Mettu, PharmD"
+                loading="eager"
+                decoding="async"
+                className="h-full w-full object-cover object-center"
+              />
             </div>
           </div>
         </Reveal>
