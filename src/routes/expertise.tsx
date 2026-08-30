@@ -46,6 +46,7 @@ const areas: Area[] = [
       "PharmD foundation",
       "Medication knowledge",
       "Patient counselling",
+      "Expert in clinical practise",
       "Evidence-based healthcare information",
     ],
     accent: "teal",
@@ -57,13 +58,7 @@ const areas: Area[] = [
     heading: "Fitness & Bodybuilding",
     description:
       "With 7+ years of experience in fitness and bodybuilding, the focus is on structured training, consistency, strength, and long-term physical development.",
-    focus: [
-      "Strength training",
-      "Bodybuilding",
-      "Fitness development",
-      "Performance",
-      "Consistency & discipline",
-    ],
+    focus: ["Strength training", "Bodybuilding", "Fitness development", "Performance", "Consistency & discipline"],
     accent: "orange",
   },
   {
@@ -73,12 +68,7 @@ const areas: Area[] = [
     heading: "Nutrition & Diet Planning",
     description:
       "A practical approach to nutrition focused on sustainable habits, balanced eating, and goal-oriented diet planning.",
-    focus: [
-      "Personalized diet planning",
-      "Nutrition habits",
-      "Lifestyle balance",
-      "Goal-oriented nutrition",
-    ],
+    focus: ["Personalized diet planning", "Nutrition habits", "Lifestyle balance", "Goal-oriented nutrition"],
     accent: "teal",
   },
   {
@@ -88,12 +78,7 @@ const areas: Area[] = [
     heading: "Creative Photography",
     description:
       "Photography as a form of visual storytelling, with a focus on portraits, lifestyle and personal or brand-oriented creative work.",
-    focus: [
-      "Portrait photography",
-      "Lifestyle photography",
-      "Brand photography",
-      "Visual storytelling",
-    ],
+    focus: ["Portrait photography", "Lifestyle photography", "Brand photography", "Visual storytelling"],
     accent: "orange",
   },
 ];
@@ -135,8 +120,8 @@ function Expertise() {
               <div aria-hidden="true" className="mt-7 h-px w-full max-w-md bg-border/70" />
 
               <p className="mt-6 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
-                An interdisciplinary approach shaped by pharmaceutical education, fitness
-                experience, nutrition, and creative visual storytelling.
+                An interdisciplinary approach shaped by pharmaceutical education, fitness experience, nutrition, and
+                creative visual storytelling.
               </p>
             </Reveal>
 
@@ -148,10 +133,7 @@ function Expertise() {
                   className="absolute inset-x-[10%] bottom-[-3%] h-6 rounded-[50%] bg-foreground/[0.07] blur-xl"
                 />
                 {/* small orange accent mark */}
-                <span
-                  aria-hidden="true"
-                  className="absolute -right-2 top-8 h-14 w-[5px] rounded-full bg-accent"
-                />
+                <span aria-hidden="true" className="absolute -right-2 top-8 h-14 w-[5px] rounded-full bg-accent" />
                 <div className="relative overflow-hidden rounded-[1.25rem] border border-border/70 shadow-[var(--shadow-card)]">
                   <img
                     src={portraitAsset.url}
@@ -202,9 +184,7 @@ function Expertise() {
                         </span>
                         <span
                           className={`mt-4 inline-block rounded-full border px-3 py-1 text-[0.625rem] font-semibold uppercase tracking-[0.16em] ${
-                            isTeal
-                              ? "border-teal/40 text-teal-deep"
-                              : "border-accent/40 text-accent"
+                            isTeal ? "border-teal/40 text-teal-deep" : "border-accent/40 text-accent"
                           }`}
                         >
                           {area.label}
@@ -280,14 +260,8 @@ function Expertise() {
             <Reveal delay={90} className="mt-14">
               <div className="relative mx-auto max-w-[640px]">
                 {/* connecting cross lines */}
-                <span
-                  aria-hidden="true"
-                  className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-border"
-                />
-                <span
-                  aria-hidden="true"
-                  className="absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-border"
-                />
+                <span aria-hidden="true" className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-border" />
+                <span aria-hidden="true" className="absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-border" />
 
                 <div className="relative grid grid-cols-2 gap-px">
                   {[
@@ -314,10 +288,7 @@ function Expertise() {
                 {/* center identity node */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                   <div className="grid h-32 w-32 place-items-center rounded-full border-[3px] border-teal bg-ivory shadow-[var(--shadow-card)] sm:h-36 sm:w-36">
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-[-6px] rounded-full border border-accent/50"
-                    />
+                    <span aria-hidden="true" className="absolute inset-[-6px] rounded-full border border-accent/50" />
                     <p className="px-3 text-center text-[0.6875rem] font-extrabold uppercase leading-snug tracking-[0.14em] text-teal-deep sm:text-[0.75rem]">
                       Dr. Sai
                       <br />
@@ -350,9 +321,7 @@ function Expertise() {
                     <h3 className="text-[0.8125rem] font-extrabold uppercase tracking-[0.18em] text-foreground">
                       {c.title}
                     </h3>
-                    <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground">
-                      {c.text}
-                    </p>
+                    <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground">{c.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -364,16 +333,13 @@ function Expertise() {
         <section className="border-t border-border/60 bg-card/40">
           <div className="mx-auto max-w-[1200px] px-6 py-20 lg:px-8 lg:py-28">
             <Reveal className="mx-auto max-w-3xl text-center">
-              <span
-                aria-hidden="true"
-                className="mx-auto block h-[3px] w-14 rounded-full bg-accent"
-              />
+              <span aria-hidden="true" className="mx-auto block h-[3px] w-14 rounded-full bg-accent" />
               <p className="mt-8 text-[1.55rem] font-bold leading-[1.4] tracking-[-0.015em] text-foreground sm:text-[1.9rem] lg:text-[2.25rem]">
                 Evidence. Discipline. <span className="text-teal-deep">Creativity.</span>
               </p>
               <p className="mx-auto mt-6 max-w-xl text-[1.0125rem] leading-[1.75] text-muted-foreground">
-                Three ideas that shape the way I approach healthcare knowledge, physical
-                development, nutrition, and visual storytelling.
+                Three ideas that shape the way I approach healthcare knowledge, physical development, nutrition, and
+                visual storytelling.
               </p>
             </Reveal>
           </div>
