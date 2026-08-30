@@ -20,10 +20,7 @@ export function Approach() {
 
         <Reveal delay={100} className="min-w-0 lg:border-l lg:border-border/70 lg:pl-16">
           <p className="max-w-[46rem] text-[1.0625rem] leading-[1.8] text-foreground/85">
-            <span className="float-left mr-3 mt-1 text-[2.75rem] font-extrabold leading-[0.8] text-teal-deep">
-              D
-            </span>
-            r. Sai Anjuri is a Doctor of Pharmacy who works where clinical care, physical training
+            <span className="font-semibold text-teal-deep">Dr. Sai Anjuri</span> is a Doctor of Pharmacy who works where clinical care, physical training
             and visual storytelling meet. His pharmacy background shapes an evidence-first approach
             to medication, health consultation and everyday wellbeing.
           </p>
