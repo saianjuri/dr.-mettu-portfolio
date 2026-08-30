@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
@@ -36,9 +37,9 @@ export function Hero() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button variant="teal" size="xl" asChild>
-              <a href="#contact">
+              <Link to="/contact">
                 Work With Me <ArrowRight aria-hidden="true" />
-              </a>
+              </Link>
             </Button>
             <Button variant="outlineAccent" size="xl" asChild>
               <a href="#portfolio">
