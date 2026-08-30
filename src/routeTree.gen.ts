@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ExpertiseRouteImport } from './routes/expertise'
+import { Route as PortfolioIndexRouteImport } from './routes/portfolio.index'
+import { Route as PortfolioDissertationRouteImport } from './routes/portfolio.dissertation'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +30,60 @@ const ExpertiseRoute = ExpertiseRouteImport.update({
   path: '/expertise',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PortfolioIndexRoute = PortfolioIndexRouteImport.update({
+  id: '/portfolio/',
+  path: '/portfolio/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PortfolioDissertationRoute = PortfolioDissertationRouteImport.update({
+  id: '/portfolio/dissertation',
+  path: '/portfolio/dissertation',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/expertise': typeof ExpertiseRoute
+  '/portfolio/dissertation': typeof PortfolioDissertationRoute
+  '/portfolio/': typeof PortfolioIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/expertise': typeof ExpertiseRoute
+  '/portfolio/dissertation': typeof PortfolioDissertationRoute
+  '/portfolio': typeof PortfolioIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/expertise': typeof ExpertiseRoute
+  '/portfolio/dissertation': typeof PortfolioDissertationRoute
+  '/portfolio/': typeof PortfolioIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/expertise'
+  fullPaths:
+    '/' | '/about' | '/expertise' | '/portfolio/dissertation' | '/portfolio/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/expertise'
-  id: '__root__' | '/' | '/about' | '/expertise'
+  to: '/' | '/about' | '/expertise' | '/portfolio/dissertation' | '/portfolio'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/expertise'
+    | '/portfolio/dissertation'
+    | '/portfolio/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ExpertiseRoute: typeof ExpertiseRoute
+  PortfolioDissertationRoute: typeof PortfolioDissertationRoute
+  PortfolioIndexRoute: typeof PortfolioIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +109,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExpertiseRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/portfolio/': {
+      id: '/portfolio/'
+      path: '/portfolio'
+      fullPath: '/portfolio/'
+      preLoaderRoute: typeof PortfolioIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/dissertation': {
+      id: '/portfolio/dissertation'
+      path: '/portfolio/dissertation'
+      fullPath: '/portfolio/dissertation'
+      preLoaderRoute: typeof PortfolioDissertationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +130,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ExpertiseRoute: ExpertiseRoute,
+  PortfolioDissertationRoute: PortfolioDissertationRoute,
+  PortfolioIndexRoute: PortfolioIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
