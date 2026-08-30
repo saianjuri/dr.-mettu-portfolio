@@ -150,7 +150,7 @@ function DissertationCaseStudy() {
                   </figcaption>
                 </figure>
 
-                <Button variant="orange" size="lg" className="mt-7 w-full max-w-[360px]" asChild>
+                <Button variant="orange" size="lg" className="mx-auto mt-7 w-full max-w-[320px] lg:mx-0" asChild>
                   <a href={DISSERTATION_PDF_URL} target="_blank" rel="noopener noreferrer">
                     View Full Dissertation <ExternalLink size={16} aria-hidden="true" />
                   </a>
