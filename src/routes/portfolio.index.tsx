@@ -255,7 +255,7 @@ function Portfolio() {
                   </p>
                 </Reveal>
                 <Reveal delay={70}>
-                  <p className="max-w-[60ch] text-[1.0625rem] leading-[1.8] text-muted-foreground">
+                  <p className="max-w-[58ch] text-[1.0625rem] leading-[1.8] text-muted-foreground">
                     The dissertation focuses on counselling strategies relevant to early pregnancy,
                     moving from an understanding of prevalence towards preventive, patient-centred
                     guidance. The work was carried out within the Department of Pharmacy Practice

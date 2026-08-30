@@ -190,7 +190,7 @@ function DissertationCaseStudy() {
                     <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
                       {item.label}
                     </dt>
-                    <dd className="max-w-[70ch] text-[1rem] leading-relaxed text-foreground/85">
+                    <dd className="max-w-[62ch] text-[1rem] leading-relaxed text-foreground/85">
                       {item.value}
                     </dd>
                   </div>
@@ -250,7 +250,7 @@ function DissertationCaseStudy() {
                       >
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <span className="max-w-[60ch] text-[1rem] leading-relaxed text-foreground/85">
+                      <span className="max-w-[58ch] text-[1rem] leading-relaxed text-foreground/85">
                         {o}
                       </span>
                     </li>

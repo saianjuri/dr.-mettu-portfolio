@@ -19,12 +19,12 @@ export function Approach() {
         </Reveal>
 
         <Reveal delay={100} className="min-w-0 lg:border-l lg:border-border/70 lg:pl-16">
-          <p className="max-w-[46rem] text-[1.0625rem] leading-[1.8] text-foreground/85">
+          <p className="max-w-[42rem] text-[1.0625rem] leading-[1.8] text-foreground/85">
             <span className="font-semibold text-teal-deep">Dr. Sai Anjuri</span> is a Doctor of Pharmacy who works where clinical care, physical training
             and visual storytelling meet. His pharmacy background shapes an evidence-first approach
             to medication, health consultation and everyday wellbeing.
           </p>
-          <p className="mt-6 max-w-[46rem] text-[1.0625rem] leading-[1.8] text-muted-foreground">
+          <p className="mt-6 max-w-[42rem] text-[1.0625rem] leading-[1.8] text-muted-foreground">
             Alongside practice, seven-plus years of strength training and bodybuilding inform how he
             builds fitness and nutrition programmes — practical, sustainable and matched to the
             person in front of him. Photography completes the picture: a creative discipline he uses
