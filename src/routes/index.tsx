@@ -22,6 +22,24 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Dr. Sai Anjuri",
+          jobTitle: "Doctor of Pharmacy (PharmD)",
+          description,
+          knowsAbout: ["Pharmacy", "Fitness", "Nutrition", "Photography"],
+          alumniOf: {
+            "@type": "CollegeOrUniversity",
+            name: "Jawaharlal Nehru Technological University, Hyderabad",
+          },
+          url: "/",
+        }),
+      },
+    ],
   }),
   component: Index,
 });
