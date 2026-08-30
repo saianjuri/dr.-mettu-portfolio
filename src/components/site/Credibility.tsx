@@ -14,11 +14,11 @@ export function Credibility() {
       <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5">
         {items.map((item, i) => (
           <Reveal as="li" key={item.label} delay={i * 70}>
-            <div className="flex h-full items-center gap-4 rounded-xl border border-border/70 bg-card px-5 py-[1.15rem] shadow-[var(--shadow-card)] transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]">
+            <div className="flex h-full items-center gap-3 rounded-xl sm:gap-4 border border-border/70 bg-card px-4 py-[1.05rem] sm:px-5 sm:py-[1.15rem] shadow-[var(--shadow-card)] transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]">
               <item.icon className={`shrink-0 ${item.accent}`} size={22} strokeWidth={1.7} aria-hidden="true" />
               <span aria-hidden="true" className="h-8 w-px shrink-0 bg-border/70" />
               <span className="min-w-0">
-                <span className="block text-[0.875rem] font-semibold leading-snug">{item.label}</span>
+                <span className="block text-[0.8125rem] font-semibold sm:text-[0.875rem] leading-snug">{item.label}</span>
                 <span className="mt-0.5 block text-[0.6875rem] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                   {item.note}
                 </span>
