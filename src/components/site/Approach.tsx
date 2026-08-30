@@ -2,25 +2,32 @@ import { Reveal } from "./Reveal";
 
 export function Approach() {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-5 py-16 lg:py-20">
-      <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+    <section id="about" className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+      <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
         <Reveal>
-          <p className="eyebrow text-teal">About</p>
-          <h2 className="mt-4 max-w-md text-3xl font-extrabold leading-tight lg:text-[2.5rem]">
+          <p className="eyebrow flex items-center gap-3 text-teal">
+            <span aria-hidden="true" className="h-px w-7 bg-teal/60" />
+            About
+          </p>
+          <h2 className="mt-5 max-w-sm text-[1.85rem] font-extrabold leading-[1.15] tracking-[-0.015em] lg:text-[2.35rem]">
             Healthcare, Fitness &amp; Creative Expression
           </h2>
-          <span aria-hidden="true" className="mt-6 flex items-center gap-1.5">
+          <span aria-hidden="true" className="mt-7 flex items-center gap-1.5">
             <span className="h-[3px] w-10 rounded-full bg-teal" />
             <span className="h-[3px] w-4 rounded-full bg-accent" />
           </span>
         </Reveal>
-        <Reveal delay={100} className="space-y-5 text-[1.02rem] leading-relaxed text-muted-foreground">
-          <p>
-            Dr. Sai Anjuri is a Doctor of Pharmacy who works where clinical care, physical training and
-            visual storytelling meet. His pharmacy background shapes an evidence-first approach to
-            medication, health consultation and everyday wellbeing.
+
+        <Reveal delay={100} className="min-w-0 lg:border-l lg:border-border/70 lg:pl-16">
+          <p className="max-w-[46rem] text-[1.0625rem] leading-[1.8] text-foreground/85">
+            <span className="float-left mr-3 mt-1 text-[2.75rem] font-extrabold leading-[0.8] text-teal-deep">
+              D
+            </span>
+            r. Sai Anjuri is a Doctor of Pharmacy who works where clinical care, physical training
+            and visual storytelling meet. His pharmacy background shapes an evidence-first approach
+            to medication, health consultation and everyday wellbeing.
           </p>
-          <p>
+          <p className="mt-6 max-w-[46rem] text-[1.0125rem] leading-[1.8] text-muted-foreground">
             Alongside practice, seven-plus years of strength training and bodybuilding inform how he
             builds fitness and nutrition programmes — practical, sustainable and matched to the
             person in front of him. Photography completes the picture: a creative discipline he uses
