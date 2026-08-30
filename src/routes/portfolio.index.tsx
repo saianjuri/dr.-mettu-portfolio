@@ -478,7 +478,7 @@ function Portfolio() {
                 </p>
               </div>
               <Button variant="orange" size="xl" className="w-full sm:w-auto" asChild>
-                <a href="mailto:hello@drsaianjuri.com">
+                <Link to="/contact">
                   Book a Consultation <ArrowRight aria-hidden="true" />
                 </a>
               </Button>
