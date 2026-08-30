@@ -20,7 +20,7 @@ export function Footer() {
         </div>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/dr_saianjuri"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-2 transition-colors hover:text-accent"
@@ -36,10 +36,10 @@ export function Footer() {
             <Linkedin size={16} aria-hidden="true" /> LinkedIn
           </a>
           <a
-            href="mailto:hello@drsaianjuri.com"
+            href="mailto:saianjuri7676@gmail.com"
             className="inline-flex items-center gap-2 transition-colors hover:text-teal-deep"
           >
-            <Mail size={16} aria-hidden="true" /> hello@drsaianjuri.com
+            <Mail size={16} aria-hidden="true" /> saianjuri7676@gmail.com
           </a>
         </div>
       </div>
