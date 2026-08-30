@@ -78,8 +78,9 @@ export function FeaturedProject() {
 
             <Button variant="teal" size="lg" className="mt-9" asChild>
               <Link to="/portfolio/dissertation">
-                View Project <ArrowRight aria-hidden="true" />
+                View Case Study <ArrowRight aria-hidden="true" />
               </Link>
+
             </Button>
           </div>
         </div>
