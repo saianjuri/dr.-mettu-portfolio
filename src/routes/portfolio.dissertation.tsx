@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { Reveal } from "@/components/site/Reveal";
@@ -9,7 +9,10 @@ import dissertationCover from "@/assets/dissertation-cover.png.asset.json";
 const title =
   "From Prevalence to Prevention — PharmD Dissertation | Dr. Sai Anjuri";
 const description =
-  "Case study of the PharmD dissertation by Dr. Sai Anjuri: ensuring healthy early pregnancy through effective counselling strategies, JNTUH.";
+  "PharmD dissertation case study: counselling strategies for healthy early pregnancy, a prospective observational study at Arundathi Institute of Medical Sciences and Hospital.";
+
+const DISSERTATION_PDF_URL =
+  "https://drive.google.com/file/d/1QghmODF0EkAFpiMazLSHisxhJLygBoxL/view?usp=sharing";
 
 export const Route = createFileRoute("/portfolio/dissertation")({
   head: () => ({
@@ -25,19 +28,69 @@ export const Route = createFileRoute("/portfolio/dissertation")({
   component: DissertationCaseStudy,
 });
 
-const details = [
-  { label: "Project Type", value: "PharmD Dissertation" },
+const overview = [
+  {
+    label: "Project Title",
+    value:
+      "From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through Effective Counselling Strategies",
+  },
+  { label: "Project Type", value: "Doctor of Pharmacy (PharmD) Dissertation" },
+  { label: "University", value: "Jawaharlal Nehru Technological University, Hyderabad" },
   { label: "Institution", value: "Marri Laxman Reddy Institute of Pharmacy" },
-  { label: "University", value: "JNTUH" },
-  { label: "Domain", value: "Healthcare / Pharmacy Practice" },
+  { label: "Department", value: "Department of Pharmacy Practice (PharmD)" },
 ];
 
-const sections = [
-  { index: "01", heading: "Project Overview" },
-  { index: "02", heading: "Objective" },
-  { index: "03", heading: "Methodology" },
-  { index: "04", heading: "Findings" },
-  { index: "05", heading: "Conclusion" },
+const team = ["Degatagore", "Pasam Sai Divya", "Sai Anjuri"];
+
+const objectives = [
+  "Determining the prevalence of complications in the first trimester of pregnancy",
+  "Identifying associated risk factors",
+  "Evaluating counselling strategies",
+  "Developing a structured counselling program",
+  "Developing educational materials and resources",
+];
+
+const methodology = [
+  { label: "Study Design", value: "Prospective observational study" },
+  {
+    label: "Study Site",
+    value:
+      "Department of Obstetrics & Gynecology, Arundathi Institute of Medical Sciences and Hospital",
+  },
+  { label: "Study Period", value: "September 2024 – February 2025" },
+  {
+    label: "Study Population",
+    value:
+      "Pregnant women visiting the In-Patient and Out-Patient facilities, particularly those in their first trimester",
+  },
+];
+
+const findings: { title: string; note?: string; rows: { label: string; value: number }[] }[] = [
+  {
+    title: "Age Distribution",
+    rows: [
+      { label: "18–24", value: 31 },
+      { label: "25–34", value: 61 },
+      { label: "35–44", value: 8 },
+    ],
+  },
+  {
+    title: "BMI",
+    rows: [
+      { label: "< 18.5", value: 1 },
+      { label: "18.5–24.9", value: 29 },
+      { label: "25–29.9", value: 30 },
+      { label: "> 30", value: 40 },
+    ],
+  },
+  {
+    title: "Past Medical History",
+    rows: [
+      { label: "Thyroid", value: 65 },
+      { label: "Hypertension", value: 23 },
+      { label: "Diabetes", value: 12 },
+    ],
+  },
 ];
 
 const guides = [
@@ -95,62 +148,137 @@ function DissertationCaseStudy() {
                     Project report cover
                   </figcaption>
                 </figure>
+
+                <Button variant="orange" size="lg" className="mt-7 w-full max-w-[360px]" asChild>
+                  <a href={DISSERTATION_PDF_URL} target="_blank" rel="noopener noreferrer">
+                    View Full Dissertation <ExternalLink size={16} aria-hidden="true" />
+                  </a>
+                </Button>
               </Reveal>
 
               <Reveal delay={100} className="min-w-0">
                 <p className="eyebrow flex items-center gap-3 text-accent">
                   <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
-                  Research / Academic
+                  Academic Project
                 </p>
                 <h1 className="mt-6 max-w-[34ch] text-[1.6rem] font-extrabold leading-[1.22] tracking-[-0.018em] sm:text-[2.1rem] lg:text-[2.5rem]">
                   From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through
                   Effective Counselling Strategies
                 </h1>
 
-                <dl className="mt-8 divide-y divide-border/70 border-y border-border/70">
-                  {[
-                    { label: "Programme", text: "Doctor of Pharmacy (PharmD) – Dissertation" },
-                    {
-                      label: "University",
-                      text: "Jawaharlal Nehru Technological University, Hyderabad",
-                    },
-                    { label: "Institution", text: "Marri Laxman Reddy Institute of Pharmacy" },
-                  ].map((item) => (
-                    <div
-                      key={item.label}
-                      className="grid gap-1 py-3.5 sm:grid-cols-[130px_minmax(0,1fr)] sm:gap-6"
-                    >
-                      <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-                        {item.label}
-                      </dt>
-                      <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">
-                        {item.text}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
+                <p className="mt-6 max-w-[58ch] text-[0.9875rem] leading-[1.8] text-muted-foreground">
+                  An academic dissertation focused on counselling strategies for promoting healthy
+                  early pregnancy and addressing pregnancy-related complications.
+                </p>
               </Reveal>
             </div>
           </div>
         </section>
 
-        {/* Project details */}
+        {/* Project overview */}
         <section className="border-t border-border/60 bg-card/40">
           <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
             <Reveal>
               <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Project Details
+                Project Overview
               </p>
             </Reveal>
-            <div className="mt-8 grid gap-px border-t border-border/70 sm:grid-cols-2 lg:grid-cols-4">
-              {details.map((d, i) => (
-                <Reveal key={d.label} delay={i * 60}>
-                  <div className="border-b border-border/70 py-6 pr-6 sm:h-full">
+            <dl className="mt-8 divide-y divide-border/70 border-y border-border/70">
+              {overview.map((item, i) => (
+                <Reveal key={item.label} delay={i * 50}>
+                  <div className="grid gap-1 py-4 sm:grid-cols-[190px_minmax(0,1fr)] sm:gap-8">
+                    <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
+                      {item.label}
+                    </dt>
+                    <dd className="max-w-[70ch] text-[0.9375rem] leading-relaxed text-foreground/85">
+                      {item.value}
+                    </dd>
+                  </div>
+                </Reveal>
+              ))}
+              <Reveal delay={overview.length * 50}>
+                <div className="grid gap-1 py-4 sm:grid-cols-[190px_minmax(0,1fr)] sm:gap-8">
+                  <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
+                    Project Team
+                  </dt>
+                  <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">
+                    <ul className="flex flex-wrap gap-x-7 gap-y-1">
+                      {team.map((name) => (
+                        <li key={name}>{name}</li>
+                      ))}
+                    </ul>
+                  </dd>
+                </div>
+              </Reveal>
+            </dl>
+          </div>
+        </section>
+
+        {/* Aims & objectives */}
+        <section className="border-t border-border/60">
+          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)] lg:gap-16">
+              <Reveal>
+                <p className="eyebrow flex items-center gap-3 text-accent">
+                  <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
+                  Aims &amp; Objectives
+                </p>
+                <h2 className="mt-5 text-[1.5rem] font-extrabold tracking-[-0.015em] lg:text-[1.9rem]">
+                  Aim
+                </h2>
+                <p className="mt-4 max-w-[42ch] text-[0.9875rem] leading-[1.8] text-muted-foreground">
+                  To develop and evaluate counselling strategies aimed at reducing early pregnancy
+                  complications.
+                </p>
+              </Reveal>
+
+              <Reveal delay={80} className="min-w-0">
+                <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  Objectives
+                </p>
+                <ol className="mt-6 border-t border-border/70">
+                  {objectives.map((o, i) => (
+                    <li
+                      key={o}
+                      className="grid gap-2 border-b border-border/70 py-5 sm:grid-cols-[64px_minmax(0,1fr)] sm:gap-6"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className={`text-[1.05rem] font-extrabold tracking-[-0.01em] ${
+                          i % 2 === 0 ? "text-teal" : "text-accent"
+                        }`}
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span className="max-w-[60ch] text-[0.9375rem] leading-relaxed text-foreground/85">
+                        {o}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </Reveal>
+            </div>
+          </div>
+        </section>
+
+        {/* Methodology */}
+        <section className="border-t border-border/60 bg-card/40">
+          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+            <Reveal>
+              <p className="eyebrow flex items-center gap-3 text-accent">
+                <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
+                Methodology
+              </p>
+            </Reveal>
+            <div className="mt-8 grid gap-px border-t border-border/70 sm:grid-cols-2">
+              {methodology.map((m, i) => (
+                <Reveal key={m.label} delay={i * 60}>
+                  <div className="border-b border-border/70 py-6 pr-8 sm:h-full">
                     <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
-                      {d.label}
+                      {m.label}
                     </p>
-                    <p className="mt-2.5 text-[0.9375rem] leading-relaxed text-foreground/85">
-                      {d.value}
+                    <p className="mt-2.5 max-w-[52ch] text-[0.9375rem] leading-relaxed text-foreground/85">
+                      {m.value}
                     </p>
                   </div>
                 </Reveal>
@@ -159,48 +287,86 @@ function DissertationCaseStudy() {
           </div>
         </section>
 
-        {/* Case study structure — content to be added */}
+        {/* Key findings */}
         <section className="border-t border-border/60">
           <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
             <Reveal className="max-w-xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
-                Case Study
+                Results
               </p>
               <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
-                Research Focus
+                Key Findings
               </h2>
-              <p className="mt-5 max-w-[58ch] text-[0.9875rem] leading-[1.8] text-muted-foreground">
-                The dissertation explored counselling strategies relevant to healthy early
-                pregnancy, moving from an understanding of prevalence towards preventive,
-                patient-centred guidance within pharmacy practice.
+              <p className="mt-5 text-[0.9375rem] leading-relaxed text-muted-foreground">
+                Study population: <span className="font-semibold text-foreground">100 subjects</span>
               </p>
             </Reveal>
 
-            <div className="mt-12 lg:mt-14">
-              {sections.map((s, i) => (
-                <Reveal key={s.index} delay={i * 50}>
-                  <article className="grid gap-4 border-t border-border/70 py-9 last:border-b lg:grid-cols-[120px_minmax(0,1fr)] lg:gap-14 lg:py-11">
-                    <span
-                      aria-hidden="true"
-                      className={`block text-[1.9rem] font-extrabold leading-none tracking-[-0.02em] lg:text-[2.4rem] ${
-                        i % 2 === 0 ? "text-teal" : "text-accent"
-                      }`}
-                    >
-                      {s.index}
-                    </span>
-                    <div className="min-w-0">
-                      <h3 className="text-[1.2rem] font-extrabold tracking-[-0.015em] lg:text-[1.4rem]">
-                        {s.heading}
-                      </h3>
-                      <p className="mt-3 text-[0.875rem] uppercase tracking-[0.14em] text-muted-foreground">
-                        Content to be added
-                      </p>
-                    </div>
-                  </article>
+            <div className="mt-12 grid gap-10 lg:grid-cols-3 lg:gap-14">
+              {findings.map((group, gi) => (
+                <Reveal key={group.title} delay={gi * 70}>
+                  <div>
+                    <p className="border-b border-border/70 pb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                      {group.title}
+                    </p>
+                    <ul className="mt-5 space-y-5">
+                      {group.rows.map((row, ri) => (
+                        <li key={row.label}>
+                          <div className="flex items-baseline justify-between gap-4">
+                            <span className="text-[0.875rem] font-medium text-foreground/85">
+                              {row.label}
+                            </span>
+                            <span
+                              className={`text-[1.1rem] font-extrabold tracking-[-0.01em] ${
+                                (gi + ri) % 2 === 0 ? "text-teal-deep" : "text-accent"
+                              }`}
+                            >
+                              {row.value}%
+                            </span>
+                          </div>
+                          <div className="mt-2 h-[3px] w-full bg-border/70">
+                            <span
+                              aria-hidden="true"
+                              className={`block h-full ${
+                                (gi + ri) % 2 === 0 ? "bg-teal" : "bg-accent"
+                              }`}
+                              style={{ width: `${row.value}%` }}
+                            />
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </Reveal>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Full document */}
+        <section className="border-t border-border/60 bg-card/40">
+          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+            <Reveal>
+              <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_auto]">
+                <div className="min-w-0">
+                  <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    Document
+                  </p>
+                  <h2 className="mt-3 text-[1.4rem] font-extrabold tracking-[-0.015em] lg:text-[1.8rem]">
+                    Read the full dissertation
+                  </h2>
+                  <p className="mt-3 max-w-[54ch] text-[0.9375rem] leading-relaxed text-muted-foreground">
+                    The complete project report opens in a new tab.
+                  </p>
+                </div>
+                <Button variant="teal" size="xl" className="w-full sm:w-auto" asChild>
+                  <a href={DISSERTATION_PDF_URL} target="_blank" rel="noopener noreferrer">
+                    View Full Dissertation <ExternalLink size={16} aria-hidden="true" />
+                  </a>
+                </Button>
+              </div>
+            </Reveal>
           </div>
         </section>
 
@@ -237,37 +403,6 @@ function DissertationCaseStudy() {
                 </Reveal>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* Project documents placeholder */}
-        <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
-            <Reveal className="max-w-xl">
-              <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Project Images &amp; Documents
-              </p>
-              <p className="mt-4 text-[0.9375rem] leading-relaxed text-muted-foreground">
-                Supporting material can be added here.
-              </p>
-            </Reveal>
-            <Reveal delay={70} className="mt-8">
-              <div className="grid gap-4 sm:grid-cols-3">
-                {[0, 1, 2].map((i) => (
-                  <div
-                    key={i}
-                    className="relative aspect-[4/3] overflow-hidden rounded-[1rem] border border-border/70 bg-secondary/50"
-                  >
-                    <span
-                      aria-hidden="true"
-                      className={`absolute left-0 top-0 h-[3px] w-12 ${
-                        i % 2 === 0 ? "bg-teal" : "bg-accent"
-                      }`}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Reveal>
           </div>
         </section>
 
