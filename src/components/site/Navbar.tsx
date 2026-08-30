@@ -14,24 +14,23 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-ivory/90 backdrop-blur-[2px]">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-ivory/92 backdrop-blur-[3px]">
       <nav
         aria-label="Main"
-        className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 lg:flex lg:justify-between lg:py-5"
+        className="mx-auto grid max-w-[1200px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-4 lg:flex lg:justify-between lg:px-8 lg:py-[1.35rem]"
       >
-        <a
-          href="#top"
-          className="min-w-0 truncate text-xl font-extrabold tracking-tight text-teal-deep"
-        >
-          DR. SAI ANJURI
+        <a href="#top" className="group min-w-0 truncate">
+          <span className="text-[1.0625rem] font-extrabold uppercase tracking-[0.14em] text-teal-deep">
+            Dr. Sai Anjuri
+          </span>
         </a>
 
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul className="hidden items-center gap-9 lg:flex">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-foreground/80 transition-colors hover:text-teal-deep focus-visible:outline-none focus-visible:text-teal-deep"
+                className="relative py-1 text-[0.8125rem] font-medium tracking-[0.02em] text-foreground/75 transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-teal after:transition-transform after:duration-300 hover:text-teal-deep hover:after:scale-x-100 focus-visible:text-teal-deep focus-visible:outline-none"
               >
                 {link.label}
               </a>
@@ -40,7 +39,7 @@ export function Navbar() {
         </ul>
 
         <div className="flex shrink-0 items-center gap-2">
-          <Button variant="orange" size="lg" className="hidden lg:inline-flex" asChild>
+          <Button variant="orange" size="default" className="hidden rounded-lg px-5 lg:inline-flex" asChild>
             <a href="#contact">
               Book Consultation <ArrowRight aria-hidden="true" />
             </a>
@@ -60,20 +59,20 @@ export function Navbar() {
 
       {open ? (
         <div id="mobile-nav" className="border-t border-border bg-ivory lg:hidden">
-          <ul className="mx-auto max-w-6xl space-y-1 px-5 py-4">
+          <ul className="mx-auto max-w-[1200px] space-y-1 px-6 py-4">
             {links.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-2 py-3 text-base font-medium text-foreground/85 transition-colors hover:bg-secondary"
+                  className="block border-b border-border/50 px-1 py-3 text-[0.95rem] font-medium text-foreground/85 transition-colors hover:text-teal-deep"
                 >
                   {link.label}
                 </a>
               </li>
             ))}
-            <li className="pt-2">
-              <Button variant="orange" size="xl" className="w-full" asChild>
+            <li className="pt-3">
+              <Button variant="orange" size="lg" className="w-full rounded-lg" asChild>
                 <a href="#contact" onClick={() => setOpen(false)}>
                   Book Consultation <ArrowRight aria-hidden="true" />
                 </a>
