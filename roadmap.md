@@ -1,9 +1,8 @@
 # Roadmap — Dr. Sai Anjuri portfolio
 
-## In progress
-- [ ] Polish: build health check + Person/Profile JSON-LD (homepage + About)
-
 ## Done
+- [x] Polish: build health check (exit 0) + Person/Profile JSON-LD (homepage + About)
+- [x] Error check: production build + TypeScript typecheck both pass with zero errors
 - [x] Education details: school (J. Sikile School, CBSE) + intermediate (Chaitanya Junior College, Palakollu) on About page
 - [x] Sitewide spacing/typography/responsive audit
 - [x] Blog articles (6) full content + imagery
