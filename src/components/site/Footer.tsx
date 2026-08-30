@@ -5,7 +5,7 @@ const tags = ["PharmD", "Fitness", "Nutrition", "Photography"];
 export function Footer() {
   return (
     <footer id="blog" className="border-t border-border/70 bg-card/60">
-      <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-7 text-sm text-muted-foreground lg:flex-row lg:items-center lg:justify-between">
+      <div className="mx-auto flex max-w-[1200px] flex-col gap-5 px-6 py-8 text-[0.8125rem] text-muted-foreground lg:flex-row lg:items-center lg:justify-between lg:px-8">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           <span className="font-semibold text-foreground/80">© 2024 Dr. Sai Anjuri</span>
           {tags.map((tag) => (

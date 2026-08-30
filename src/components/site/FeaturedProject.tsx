@@ -1,76 +1,86 @@
-import { ArrowRight, GraduationCap, Building2, BookOpen } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
 import dissertationCover from "@/assets/dissertation-cover.png.asset.json";
 
 const meta = [
-  { icon: BookOpen, text: "Doctor of Pharmacy (PharmD) – Dissertation" },
-  { icon: GraduationCap, text: "Jawaharlal Nehru Technological University, Hyderabad" },
-  { icon: Building2, text: "Marri Laxman Reddy Institute of Pharmacy" },
+  { label: "Programme", text: "Doctor of Pharmacy (PharmD) – Dissertation" },
+  { label: "University", text: "Jawaharlal Nehru Technological University, Hyderabad" },
+  { label: "Institution", text: "Marri Laxman Reddy Institute of Pharmacy" },
 ];
 
 export function FeaturedProject() {
   return (
-    <section id="portfolio" className="mx-auto max-w-6xl px-5 py-20 lg:py-24">
-      <Reveal className="text-center">
-        <p className="eyebrow text-teal">Featured Project</p>
+    <section id="portfolio" className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+      <Reveal className="max-w-xl">
+        <p className="eyebrow flex items-center gap-3 text-accent">
+          <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
+          Featured Project
+        </p>
       </Reveal>
 
-      <Reveal delay={90} className="mt-8">
-        <div className="grid gap-8 rounded-2xl border border-border/70 bg-card p-6 shadow-[var(--shadow-card)] lg:grid-cols-[210px_minmax(0,1fr)_260px] lg:gap-10 lg:p-8 lg:items-center">
-          <div className="mx-auto w-full max-w-[210px] lg:mx-0">
+      <Reveal delay={90} className="mt-9">
+        <div className="grid gap-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-16">
+          <figure className="mx-auto w-full max-w-[280px] lg:mx-0">
             <img
               src={dissertationCover.url}
               alt="Dissertation cover — From Prevalence to Prevention, PharmD project report"
               loading="lazy"
-              className="w-full rounded-md border border-border/70 shadow-[var(--shadow-card)]"
+              className="w-full rounded-sm border border-border/70 shadow-[var(--shadow-card)]"
             />
-          </div>
+            <figcaption className="mt-3 text-[0.6875rem] font-medium uppercase tracking-[0.14em] text-muted-foreground">
+              Project report cover
+            </figcaption>
+          </figure>
 
           <div className="min-w-0">
-            <h2 className="text-xl font-bold leading-snug lg:text-2xl">
+            <h2 className="max-w-[38ch] text-[1.45rem] font-extrabold leading-[1.25] tracking-[-0.015em] lg:text-[1.9rem]">
               From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through Effective
               Counselling Strategies
             </h2>
-            <ul className="mt-6 space-y-3">
+
+            <dl className="mt-8 divide-y divide-border/70 border-y border-border/70">
               {meta.map((item) => (
-                <li key={item.text} className="flex items-start gap-3 text-sm text-muted-foreground">
-                  <item.icon className="mt-0.5 shrink-0 text-teal" size={16} aria-hidden="true" />
-                  <span className="min-w-0">{item.text}</span>
-                </li>
+                <div key={item.label} className="grid gap-1 py-3.5 sm:grid-cols-[130px_minmax(0,1fr)] sm:gap-6">
+                  <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                    {item.label}
+                  </dt>
+                  <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">{item.text}</dd>
+                </div>
               ))}
-            </ul>
-            <Button variant="teal" size="lg" className="mt-8" asChild>
+            </dl>
+
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              <div className="border-l-2 border-teal pl-4">
+                <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-teal-deep">
+                  Hospital Guide
+                </p>
+                <p className="mt-1.5 text-[0.9375rem] font-semibold">Dr. Aparna Padala, MBBS, MS</p>
+                <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
+                  Professor, Department of Obstetrics and Gynaecology
+                  <br />
+                  Arundath Hospital, Dundigal, Hyderabad
+                </p>
+              </div>
+              <div className="border-l-2 border-accent pl-4">
+                <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent">
+                  Institutional Guide
+                </p>
+                <p className="mt-1.5 text-[0.9375rem] font-semibold">Dr. B. Raja Rajeshwari, Pharm D</p>
+                <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
+                  Assistant Professor, Department of Pharmacy Practice
+                  <br />
+                  Marri Laxman Reddy Institute of Pharmacy
+                </p>
+              </div>
+            </div>
+
+            <Button variant="teal" size="lg" className="mt-9" asChild>
               <a href="#contact">
                 View Project <ArrowRight aria-hidden="true" />
               </a>
             </Button>
           </div>
-
-          <aside className="space-y-6 rounded-xl bg-secondary/70 p-5 lg:border-l lg:border-border">
-            <div className="border-l-2 border-teal pl-3">
-              <p className="text-xs font-semibold uppercase tracking-wider text-teal-deep">
-                Hospital Guide
-              </p>
-              <p className="mt-1.5 text-sm font-bold">Dr. Aparna Padala, MBBS, MS</p>
-              <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                Professor, Department of Obstetrics and Gynaecology
-                <br />
-                Arundath Hospital, Dundigal, Hyderabad
-              </p>
-            </div>
-            <div className="border-l-2 border-accent pl-3">
-              <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-                Institutional Guide
-              </p>
-              <p className="mt-1.5 text-sm font-bold">Dr. B. Raja Rajeshwari, Pharm D</p>
-              <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                Assistant Professor, Department of Pharmacy Practice
-                <br />
-                Marri Laxman Reddy Institute of Pharmacy
-              </p>
-            </div>
-          </aside>
         </div>
       </Reveal>
     </section>

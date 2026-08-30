@@ -8,27 +8,28 @@ const portraitUrl = portraitAsset.url;
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute right-[-8%] top-24 hidden h-[520px] w-[520px] rounded-full bg-teal/5 blur-[2px] lg:block"
-      />
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-14 pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:py-20">
+      <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-6 pb-16 pt-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16 lg:px-8 lg:pb-24 lg:pt-20">
         <Reveal className="min-w-0">
-          <p className="eyebrow text-accent">Clinical Expertise. Fitness Passion. Creative Vision.</p>
-          <h1 className="mt-5 text-[2.1rem] font-extrabold leading-[1.12] sm:text-5xl lg:text-[3.35rem]">
+          <p className="eyebrow flex items-center gap-3 text-accent">
+            <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
+            Clinical Expertise. Fitness Passion. Creative Vision.
+          </p>
+          <h1 className="mt-6 text-[2.15rem] font-extrabold leading-[1.1] tracking-[-0.02em] sm:text-[2.9rem] lg:text-[3.4rem]">
             <span className="text-teal-deep">Dr. Sai Anjuri</span> PharmD
-            <span className="mx-2 font-light text-border">|</span>
+            <span className="mx-2.5 font-light text-border">|</span>
             <br className="hidden sm:block" />
-            Fitness Mentor & Photographer
+            Fitness Mentor &amp; Photographer
           </h1>
 
-          <p className="mt-6 max-w-xl text-[0.95rem] font-semibold leading-relaxed text-foreground/85">
-            PharmD <span className="text-teal">&bull;</span> 7+ Years Fitness & Bodybuilding Expert{" "}
+          <p className="mt-7 max-w-xl text-[0.875rem] font-semibold uppercase leading-relaxed tracking-[0.06em] text-foreground/70">
+            PharmD <span className="text-teal">&bull;</span> 7+ Years Fitness &amp; Bodybuilding Expert{" "}
             <span className="text-teal">&bull;</span> Diet Planner <span className="text-teal">&bull;</span>{" "}
             Creative Photographer
           </p>
 
-          <p className="mt-5 max-w-lg text-[0.98rem] leading-relaxed text-muted-foreground">
+          <div aria-hidden="true" className="mt-7 h-px w-full max-w-md bg-border/70" />
+
+          <p className="mt-6 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
             Integrating clinical expertise with fitness, nutrition, and visual storytelling to help
             you live healthier, stronger, and more creatively.
           </p>
@@ -48,13 +49,24 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={120} className="min-w-0">
-          <div className="relative mx-auto aspect-square w-full max-w-[432px]">
+          <div className="relative mx-auto aspect-square w-full max-w-[300px] sm:max-w-[360px] lg:max-w-[424px]">
+            {/* soft grounding shadow — keeps the portrait placed, not floating */}
             <span
               aria-hidden="true"
-              className="absolute inset-[-4%] rounded-full border-[7px] border-transparent border-t-accent"
-              style={{ transform: "rotate(48deg)" }}
+              className="absolute inset-x-[12%] bottom-[-2%] h-6 rounded-[50%] bg-foreground/[0.07] blur-xl"
             />
-            <div className="absolute inset-0 overflow-hidden rounded-full border-[6px] border-teal bg-secondary">
+            {/* controlled orange accent arc */}
+            <span
+              aria-hidden="true"
+              className="absolute inset-[-5%] rounded-full border-[5px] border-transparent border-t-accent"
+              style={{ transform: "rotate(42deg)" }}
+            />
+            {/* thin teal ring, offset from the photo edge */}
+            <span
+              aria-hidden="true"
+              className="absolute inset-[-5%] rounded-full border border-teal/35"
+            />
+            <div className="absolute inset-0 overflow-hidden rounded-full border-[3px] border-teal bg-secondary">
               <img
                 src={portraitUrl}
                 alt="Portrait of Dr. Sai Anjuri, PharmD"
