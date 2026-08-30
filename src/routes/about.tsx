@@ -89,8 +89,8 @@ function About() {
               <div aria-hidden="true" className="mt-7 h-px w-full max-w-md bg-border/70" />
 
               <p className="mt-6 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
-                Dr. Sai Anjuri is a Doctor of Pharmacy professional Passionate About Patient Care And Research | Skilled
-                In Clinical Practice | Evidence-Based Medication Management |, fitness, nutrition, and creative
+                Dr. Sai Anjuri is a Doctor of Pharmacy professional Passionate About Patient Care And Research Skilled
+                In Clinical Practice, Evidence-Based Medication Management, fitness, nutrition, and creative
                 photography.
               </p>
               <p className="mt-4 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
