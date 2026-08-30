@@ -260,7 +260,7 @@ function Journal() {
                   </p>
                 </div>
                 <Button variant="orange" size="xl" className="w-full sm:w-auto" asChild>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer noopener">
+                  <a href="https://www.instagram.com/dr_saianjuri" target="_blank" rel="noreferrer noopener">
                     Follow Dr. Sai Anjuri <ArrowRight aria-hidden="true" />
                   </a>
                 </Button>
