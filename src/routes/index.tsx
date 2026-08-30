@@ -8,9 +8,9 @@ import { FeaturedProject } from "@/components/site/FeaturedProject";
 import { FinalCta } from "@/components/site/FinalCta";
 import { Footer } from "@/components/site/Footer";
 
-const title = "Dr. Mettu — PharmD, Fitness Mentor & Photographer";
+const title = "Dr. Sai Anjuri — PharmD, Fitness Mentor & Photographer";
 const description =
-  "Personal portfolio of Dr. Mettu, PharmD: clinical pharmaceutical care, fitness and bodybuilding coaching, diet planning, and creative photography.";
+  "Personal portfolio of Dr. Sai Anjuri, PharmD: clinical pharmaceutical care, fitness and bodybuilding coaching, diet planning, and creative photography.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
