@@ -9,8 +9,8 @@ export type BlogPost = {
   readingTime: string;
   date: string;
   featured?: boolean;
-  /** Minimal, text-only card treatment in the grid. */
-  textOnly?: boolean;
+  /** Real cover image URL; when set it replaces the editorial placeholder. */
+  image?: string;
 };
 
 export const categoryLabels: Record<BlogCategory, string> = {
@@ -72,7 +72,6 @@ export const posts: BlogPost[] = [
       "On patience, repetition and the quiet part of training nobody photographs. Full article coming soon.",
     readingTime: "4 min read",
     date: "Coming soon",
-    textOnly: true,
   },
   {
     slug: "healthcare-communication-patient-understanding",
@@ -93,7 +92,6 @@ export const posts: BlogPost[] = [
       "How a camera changes the way you notice people, light and ordinary moments. Full article coming soon.",
     readingTime: "5 min read",
     date: "Coming soon",
-    textOnly: true,
   },
 ];
 
