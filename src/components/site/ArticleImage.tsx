@@ -2,7 +2,7 @@ import type { BlogCategory } from "@/lib/blog-data";
 
 type Props = {
   /** Real cover image URL. When present it replaces the editorial placeholder. */
-  src?: string;
+  src?: string | undefined;
   alt?: string;
   category: BlogCategory;
   label?: string;
