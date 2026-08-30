@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dr. Mettu — PharmD, Fitness Mentor & Photographer" },
+      { title: "Dr. Sai Anjuri — PharmD, Fitness Mentor & Photographer" },
       {
         name: "description",
         content:
-          "Personal portfolio of Dr. Mettu, PharmD — clinical care, fitness coaching, nutrition and photography.",
+          "Personal portfolio of Dr. Sai Anjuri, PharmD — clinical care, fitness coaching, nutrition and photography.",
       },
-      { name: "author", content: "Dr. Mettu" },
-      { property: "og:title", content: "Dr. Mettu — PharmD, Fitness Mentor & Photographer" },
+      { name: "author", content: "Dr. Sai Anjuri" },
+      { property: "og:title", content: "Dr. Sai Anjuri — PharmD, Fitness Mentor & Photographer" },
       {
         property: "og:description",
         content:
-          "Personal portfolio of Dr. Mettu, PharmD — clinical care, fitness coaching, nutrition and photography.",
+          "Personal portfolio of Dr. Sai Anjuri, PharmD — clinical care, fitness coaching, nutrition and photography.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

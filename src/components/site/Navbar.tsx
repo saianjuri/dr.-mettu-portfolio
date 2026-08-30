@@ -23,7 +23,7 @@ export function Navbar() {
           href="#top"
           className="min-w-0 truncate text-xl font-extrabold tracking-tight text-teal-deep"
         >
-          DR. METTU
+          DR. SAI ANJURI
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">

@@ -16,7 +16,7 @@ export function Hero() {
         <Reveal className="min-w-0">
           <p className="eyebrow text-accent">Clinical Expertise. Fitness Passion. Creative Vision.</p>
           <h1 className="mt-5 text-[2.1rem] font-extrabold leading-[1.12] sm:text-5xl lg:text-[3.35rem]">
-            <span className="text-teal-deep">Dr. Mettu</span> PharmD
+            <span className="text-teal-deep">Dr. Sai Anjuri</span> PharmD
             <span className="mx-2 font-light text-border">|</span>
             <br className="hidden sm:block" />
             Fitness Mentor & Photographer
@@ -57,7 +57,7 @@ export function Hero() {
             <div className="absolute inset-0 overflow-hidden rounded-full border-[6px] border-teal bg-secondary">
               <img
                 src={portraitUrl}
-                alt="Portrait of Dr. Mettu, PharmD"
+                alt="Portrait of Dr. Sai Anjuri, PharmD"
                 loading="eager"
                 decoding="async"
                 className="h-full w-full object-cover object-center"

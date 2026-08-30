@@ -7,7 +7,7 @@ export function Footer() {
     <footer id="blog" className="border-t border-border/70 bg-card/60">
       <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-7 text-sm text-muted-foreground lg:flex-row lg:items-center lg:justify-between">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <span className="font-semibold text-foreground/80">© 2024 Dr. Mettu</span>
+          <span className="font-semibold text-foreground/80">© 2024 Dr. Sai Anjuri</span>
           {tags.map((tag) => (
             <a
               key={tag}
@@ -36,10 +36,10 @@ export function Footer() {
             <Linkedin size={16} aria-hidden="true" /> LinkedIn
           </a>
           <a
-            href="mailto:hello@drmettu.com"
+            href="mailto:hello@drsaianjuri.com"
             className="inline-flex items-center gap-2 transition-colors hover:text-teal-deep"
           >
-            <Mail size={16} aria-hidden="true" /> hello@drmettu.com
+            <Mail size={16} aria-hidden="true" /> hello@drsaianjuri.com
           </a>
         </div>
       </div>
