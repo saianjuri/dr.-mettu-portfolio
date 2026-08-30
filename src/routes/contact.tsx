@@ -25,9 +25,9 @@ export const Route = createFileRoute("/contact")({
 });
 
 const CONTACT_DETAILS = [
-  { icon: Mail, label: "Email", value: "[your-email@example.com]" },
-  { icon: Phone, label: "Phone", value: "[+91 00000 00000]" },
-  { icon: MapPin, label: "Location", value: "[Hyderabad, India]" },
+  { icon: Mail, label: "Email", value: "saianjuri7676@gmail.com" },
+  { icon: Phone, label: "Phone", value: "+91 8688613715" },
+  { icon: MapPin, label: "Location", value: "Hyderabad, India" },
 ];
 
 const REASONS = [
@@ -112,7 +112,7 @@ function ContactPage() {
                 </p>
                 <div className="mt-4 flex flex-wrap gap-3">
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/dr_saianjuri"
                     target="_blank"
                     rel="noreferrer noopener"
                     className="inline-flex items-center gap-2 rounded-lg border border-border/70 bg-card px-4 py-2.5 text-[0.8125rem] font-medium text-foreground/80 shadow-[var(--shadow-card)] transition-colors hover:border-teal/50 hover:text-teal-deep"
