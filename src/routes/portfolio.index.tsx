@@ -193,7 +193,11 @@ function Portfolio() {
                   </figure>
 
                   <div className="min-w-0">
-                    <h2 className="max-w-[36ch] text-[1.5rem] font-extrabold leading-[1.25] tracking-[-0.018em] lg:text-[2.05rem]">
+                    <p className="eyebrow flex items-center gap-3 text-accent">
+                      <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
+                      Academic Project
+                    </p>
+                    <h2 className="mt-5 max-w-[36ch] text-[1.5rem] font-extrabold leading-[1.25] tracking-[-0.018em] lg:text-[2.05rem]">
                       From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through
                       Effective Counselling Strategies
                     </h2>
@@ -222,9 +226,8 @@ function Portfolio() {
                     </dl>
 
                     <p className="mt-7 max-w-[58ch] text-[0.95rem] leading-[1.8] text-muted-foreground">
-                      An academic dissertation completed as part of the Doctor of Pharmacy
-                      programme, examining counselling strategies in the context of healthy early
-                      pregnancy and prevention.
+                      An academic dissertation focused on counselling strategies for promoting
+                      healthy early pregnancy and addressing pregnancy-related complications.
                     </p>
 
                     <Button variant="teal" size="lg" className="mt-9" asChild>
@@ -233,6 +236,7 @@ function Portfolio() {
                       </Link>
                     </Button>
                   </div>
+
                 </div>
               </Reveal>
             </div>
