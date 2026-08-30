@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
@@ -76,9 +77,9 @@ export function FeaturedProject() {
             </div>
 
             <Button variant="teal" size="lg" className="mt-9" asChild>
-              <a href="#contact">
+              <Link to="/portfolio/dissertation">
                 View Project <ArrowRight aria-hidden="true" />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
