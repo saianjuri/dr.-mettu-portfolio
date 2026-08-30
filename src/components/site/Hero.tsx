@@ -1,6 +1,9 @@
-import { ArrowRight, ImagePlus } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
+import portraitAsset from "@/assets/portrait-drmettu.png.asset.json";
+
+const portraitUrl = portraitAsset.url;
 
 export function Hero() {
   return (
