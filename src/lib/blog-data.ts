@@ -1,3 +1,5 @@
+import featuredPhoto from "@/assets/blog/featured.jpg";
+
 export type BlogCategory = "pharmacy" | "fitness" | "nutrition" | "wellness" | "creative";
 
 export type BlogPost = {
@@ -32,6 +34,7 @@ export const posts: BlogPost[] = [
     readingTime: "6 min read",
     date: "Coming soon",
     featured: true,
+    image: featuredPhoto,
   },
   {
     slug: "understanding-medicines-beyond-the-prescription",
