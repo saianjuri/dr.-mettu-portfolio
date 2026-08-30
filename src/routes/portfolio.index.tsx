@@ -480,7 +480,7 @@ function Portfolio() {
               <Button variant="orange" size="xl" className="w-full sm:w-auto" asChild>
                 <Link to="/contact">
                   Book a Consultation <ArrowRight aria-hidden="true" />
-                </a>
+                </Link>
               </Button>
             </div>
           </Reveal>

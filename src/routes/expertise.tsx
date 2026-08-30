@@ -409,7 +409,7 @@ function Expertise() {
                 >
                   <Link to="/contact">
                     Get In Touch <ArrowRight aria-hidden="true" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>
