@@ -48,8 +48,8 @@ export function Hero() {
           <div className="relative mx-auto aspect-square w-full max-w-[420px]">
             <span
               aria-hidden="true"
-              className="absolute inset-[-3%] rounded-full border-[7px] border-transparent border-r-accent border-t-accent"
-              style={{ transform: "rotate(-28deg)" }}
+              className="absolute inset-[-3.5%] rounded-full border-[7px] border-transparent border-t-accent"
+              style={{ transform: "rotate(52deg)" }}
             />
             <div className="absolute inset-0 overflow-hidden rounded-full border-[6px] border-teal bg-secondary">
               {/* PLACEHOLDER — replace with Dr. Mettu's professional portrait */}
