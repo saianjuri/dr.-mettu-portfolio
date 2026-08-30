@@ -41,7 +41,7 @@ function ArticleNotFound() {
       <Navbar />
       <main className="mx-auto max-w-[760px] px-6 py-24 lg:px-8">
         <h1 className="text-[2rem] font-extrabold tracking-[-0.02em]">Article not found</h1>
-        <p className="mt-4 text-[0.9875rem] leading-[1.8] text-muted-foreground">
+        <p className="mt-4 text-[1rem] leading-[1.8] text-muted-foreground">
           This article isn&apos;t available yet.
         </p>
         <Link
@@ -76,7 +76,7 @@ function ArticleDetail() {
               </Link>
 
               <p className="eyebrow mt-8 text-teal-deep">{post.categoryLabel}</p>
-              <h1 className="mt-4 text-[1.85rem] font-extrabold leading-[1.18] tracking-[-0.02em] lg:text-[2.6rem]">
+              <h1 className="mt-4 heading-page">
                 {post.title}
               </h1>
 
@@ -114,7 +114,7 @@ function ArticleDetail() {
           </div>
 
           {/* ————— Body ————— */}
-          <div className="mx-auto max-w-[720px] px-6 py-14 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[720px] px-6 lg:px-8 section-lg">
             <Reveal className="text-[1.0625rem] leading-[1.85] text-foreground/85">
               <p className="text-[1.15rem] leading-[1.7] text-muted-foreground">{post.excerpt}</p>
 
@@ -125,7 +125,7 @@ function ArticleDetail() {
                 structure below shows how the published piece will be laid out.
               </p>
 
-              <h2 className="mt-10 text-[1.35rem] font-extrabold tracking-[-0.015em]">
+              <h2 className="mt-10 heading-card">
                 Section heading
               </h2>
               <p className="mt-4">
@@ -145,7 +145,7 @@ function ArticleDetail() {
                 Pull quotes are supported and will be used sparingly.
               </blockquote>
 
-              <h2 className="mt-10 text-[1.35rem] font-extrabold tracking-[-0.015em]">
+              <h2 className="mt-10 heading-card">
                 Closing thoughts
               </h2>
               <p className="mt-4">
@@ -177,7 +177,7 @@ function ArticleDetail() {
 
         {/* ————— Related ————— */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-md">
             <Reveal>
               <h2 className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Continue Reading

@@ -18,7 +18,7 @@ export function Credibility() {
               <item.icon className={`shrink-0 ${item.accent}`} size={22} strokeWidth={1.7} aria-hidden="true" />
               <span aria-hidden="true" className="h-8 w-px shrink-0 bg-border/70" />
               <span className="min-w-0">
-                <span className="block text-[0.8125rem] font-semibold sm:text-[0.875rem] leading-snug">{item.label}</span>
+                <span className="block break-words text-[0.8125rem] font-semibold sm:text-[0.875rem] leading-snug">{item.label}</span>
                 <span className="mt-0.5 block text-[0.6875rem] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                   {item.note}
                 </span>

@@ -53,13 +53,13 @@ const pillars: Pillar[] = [
 export function Pillars() {
   return (
     <section id="expertise" className="border-y border-border/70 bg-card/60">
-      <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
         <Reveal className="max-w-xl">
           <p className="eyebrow flex items-center gap-3 text-teal">
             <span aria-hidden="true" className="h-px w-7 bg-teal/60" />
             My Approach
           </p>
-          <h2 className="mt-4 text-[1.85rem] font-extrabold leading-[1.15] tracking-[-0.015em] lg:text-[2.35rem]">
+          <h2 className="mt-4 heading-section">
             Four Pillars of My Practice
           </h2>
         </Reveal>

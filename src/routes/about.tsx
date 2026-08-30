@@ -74,13 +74,13 @@ function About() {
       <main>
         {/* ————— Editorial hero ————— */}
         <section className="relative overflow-hidden">
-          <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-6 pb-16 pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:pb-24 lg:pt-20">
+          <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 hero-pad">
             <Reveal className="min-w-0">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 About Dr. Sai Anjuri
               </p>
-              <h1 className="mt-6 text-[2.15rem] font-extrabold leading-[1.1] tracking-[-0.02em] sm:text-[2.9rem] lg:text-[3.25rem]">
+              <h1 className="mt-6 heading-page">
                 Healthcare, Fitness &amp;
                 <br />
                 <span className="text-teal-deep">Creative Expression</span>
@@ -88,12 +88,12 @@ function About() {
 
               <div aria-hidden="true" className="mt-7 h-px w-full max-w-md bg-border/70" />
 
-              <p className="mt-6 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
+              <p className="mt-6 max-w-[34rem] text-[1.0625rem] leading-[1.75] text-muted-foreground">
                 Dr. Sai Anjuri is a Doctor of Pharmacy professional Passionate About Patient Care And Research Skilled
                 In Clinical Practice, Evidence-Based Medication Management, fitness, nutrition, and creative
                 photography.
               </p>
-              <p className="mt-4 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
+              <p className="mt-4 max-w-[34rem] text-[1.0625rem] leading-[1.75] text-muted-foreground">
                 His PharmD background provides an evidence-based foundation for his approach to health and wellbeing,
                 while his experience in fitness, nutrition, and photography allows him to explore health and personal
                 development from different perspectives.
@@ -130,13 +130,13 @@ function About() {
 
         {/* ————— Professional identity ————— */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="max-w-xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 Professional Identity
               </p>
-              <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+              <h2 className="mt-5 heading-section">
                 More Than One Discipline
               </h2>
             </Reveal>
@@ -159,7 +159,7 @@ function About() {
                     <h3 className="text-[1.05rem] font-extrabold uppercase tracking-[0.06em] text-foreground">
                       {d.label}
                     </h3>
-                    <p className="max-w-[52ch] text-[0.9375rem] leading-relaxed text-muted-foreground">{d.text}</p>
+                    <p className="max-w-[52ch] text-[1rem] leading-relaxed text-muted-foreground">{d.text}</p>
                   </li>
                 ))}
               </ol>
@@ -169,14 +169,14 @@ function About() {
 
         {/* ————— Education ————— */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20">
               <Reveal>
                 <p className="eyebrow flex items-center gap-3 text-accent">
                   <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                   Education
                 </p>
-                <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+                <h2 className="mt-5 heading-section">
                   Academic Background
                 </h2>
               </Reveal>
@@ -196,7 +196,7 @@ function About() {
                         <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                           University
                         </dt>
-                        <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">
+                        <dd className="text-[1rem] leading-relaxed text-foreground/85">
                           Jawaharlal Nehru Technological University, Hyderabad
                         </dd>
                       </div>
@@ -204,7 +204,7 @@ function About() {
                         <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                           Institution
                         </dt>
-                        <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">
+                        <dd className="text-[1rem] leading-relaxed text-foreground/85">
                           Marri Laxman Reddy Institute of Pharmacy
                         </dd>
                       </div>
@@ -217,7 +217,7 @@ function About() {
         </section>
 
         {/* ————— Academic work ————— */}
-        <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
           <Reveal className="max-w-xl">
             <p className="eyebrow flex items-center gap-3 text-accent">
               <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
@@ -240,7 +240,7 @@ function About() {
               </figure>
 
               <div className="min-w-0">
-                <h2 className="max-w-[38ch] text-[1.45rem] font-extrabold leading-[1.25] tracking-[-0.015em] lg:text-[1.9rem]">
+                <h2 className="max-w-[38ch] heading-section">
                   From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through Effective Counselling
                   Strategies
                 </h2>
@@ -258,7 +258,7 @@ function About() {
                       <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                         {item.label}
                       </dt>
-                      <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">{item.text}</dd>
+                      <dd className="text-[1rem] leading-relaxed text-foreground/85">{item.text}</dd>
                     </div>
                   ))}
                 </dl>
@@ -275,13 +275,13 @@ function About() {
 
         {/* ————— My approach ————— */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="max-w-xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 My Approach
               </p>
-              <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+              <h2 className="mt-5 heading-section">
                 Three Guiding Principles
               </h2>
             </Reveal>
@@ -291,7 +291,7 @@ function About() {
                 <Reveal key={p.title} delay={i * 80}>
                   <div className="border-t-2 border-teal pt-5">
                     <h3 className="text-[1.05rem] font-extrabold tracking-[-0.01em]">{p.title}</h3>
-                    <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground">{p.text}</p>
+                    <p className="mt-3 text-[1rem] leading-relaxed text-muted-foreground">{p.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -301,7 +301,7 @@ function About() {
 
         {/* ————— Personal brand statement ————— */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-20 lg:px-8 lg:py-28">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="mx-auto max-w-3xl text-center">
               <span aria-hidden="true" className="mx-auto block h-[3px] w-14 rounded-full bg-accent" />
               <p className="mt-8 text-[1.55rem] font-bold leading-[1.4] tracking-[-0.015em] text-foreground sm:text-[1.9rem] lg:text-[2.25rem]">
@@ -319,18 +319,18 @@ function About() {
         </section>
 
         {/* ————— CTA ————— */}
-        <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
           <Reveal>
             <div className="grid items-center gap-8 rounded-xl bg-teal px-7 py-11 text-primary-foreground sm:px-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14 lg:py-14">
               <div className="min-w-0">
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
                   Consult. Train. Transform.
                 </p>
-                <h2 className="mt-3 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+                <h2 className="mt-3 heading-section">
                   Let&apos;s Work Together
                 </h2>
                 <span aria-hidden="true" className="mt-5 block h-px w-16 bg-primary-foreground/30" />
-                <p className="mt-5 max-w-md text-[0.9375rem] leading-relaxed text-primary-foreground/85">
+                <p className="mt-5 max-w-md text-[1rem] leading-relaxed text-primary-foreground/85">
                   Explore consultation, fitness, nutrition and creative collaboration.
                 </p>
               </div>
