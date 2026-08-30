@@ -14,8 +14,8 @@ export function Credibility() {
       <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
         {items.map((item, i) => (
           <Reveal as="li" key={item.label} delay={i * 70}>
-            <div className="flex h-full items-center gap-3 rounded-xl border border-border/70 bg-card p-4 shadow-[var(--shadow-card)] transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]">
-              <item.icon className={`shrink-0 ${item.accent}`} size={22} aria-hidden="true" />
+            <div className="flex h-full items-center gap-3.5 rounded-[1.125rem] border border-border/70 bg-card px-5 py-4 shadow-[var(--shadow-card)] transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]">
+              <item.icon className={`shrink-0 ${item.accent}`} size={23} aria-hidden="true" />
               <span className="min-w-0 text-sm font-semibold leading-snug">{item.label}</span>
             </div>
           </Reveal>

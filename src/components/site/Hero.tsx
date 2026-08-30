@@ -9,7 +9,7 @@ export function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute right-[-8%] top-24 hidden h-[520px] w-[520px] rounded-full bg-teal/5 blur-[2px] lg:block"
       />
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 pb-16 pt-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pb-24 lg:pt-20">
+      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-14 pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:py-20">
         <Reveal className="min-w-0">
           <p className="eyebrow text-accent">Clinical Expertise. Fitness Passion. Creative Vision.</p>
           <h1 className="mt-5 text-[2.1rem] font-extrabold leading-[1.12] sm:text-5xl lg:text-[3.35rem]">
@@ -45,14 +45,22 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={120} className="min-w-0">
-          <div className="relative mx-auto aspect-square w-full max-w-[420px]">
+          <div className="relative mx-auto aspect-square w-full max-w-[432px]">
             <span
               aria-hidden="true"
-              className="absolute inset-[-3.5%] rounded-full border-[7px] border-transparent border-t-accent"
-              style={{ transform: "rotate(52deg)" }}
+              className="absolute inset-[-4%] rounded-full border-[7px] border-transparent border-t-accent border-r-accent/40"
+              style={{ transform: "rotate(48deg)" }}
             />
             <div className="absolute inset-0 overflow-hidden rounded-full border-[6px] border-teal bg-secondary">
-              {/* PLACEHOLDER — replace with Dr. Mettu's professional portrait */}
+              {/*
+                PORTRAIT: replace the placeholder below with:
+                <img
+                  src={portraitUrl}
+                  alt="Portrait of Dr. Mettu"
+                  className="h-full w-full object-cover object-[center_22%]"
+                />
+                object-cover + top-biased centering keeps the face framed without cropping the head.
+              */}
               <div className="flex h-full w-full flex-col items-center justify-center gap-3 px-8 text-center">
                 <ImagePlus className="text-teal" size={34} aria-hidden="true" />
                 <p className="text-sm font-semibold text-foreground/80">Portrait placeholder</p>

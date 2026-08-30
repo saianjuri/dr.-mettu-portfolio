@@ -17,7 +17,7 @@ export function FeaturedProject() {
       </Reveal>
 
       <Reveal delay={90} className="mt-8">
-        <div className="grid gap-8 rounded-2xl border border-border/70 bg-card p-6 shadow-[var(--shadow-card)] lg:grid-cols-[220px_minmax(0,1fr)_260px] lg:gap-10 lg:p-8">
+        <div className="grid gap-8 rounded-2xl border border-border/70 bg-card p-6 shadow-[var(--shadow-card)] lg:grid-cols-[210px_minmax(0,1fr)_260px] lg:gap-10 lg:p-8 lg:items-center">
           <div className="mx-auto w-full max-w-[210px] lg:mx-0">
             <img
               src={dissertationCover.url}
