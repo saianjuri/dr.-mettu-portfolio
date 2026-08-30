@@ -68,7 +68,13 @@ const areas: Area[] = [
     heading: "Nutrition & Diet Planning",
     description:
       "A practical approach to nutrition focused on sustainable habits, balanced eating, and goal-oriented diet planning.",
-    focus: ["Personalized diet planning", "Nutrition habits", "Lifestyle balance", "Goal-oriented nutrition"],
+    focus: [
+      "Personalized diet planning",
+      "Nutrition habits",
+      "Lifestyle balance",
+      " Mental health awareness",
+      "Goal-oriented nutrition",
+    ],
     accent: "teal",
   },
   {
