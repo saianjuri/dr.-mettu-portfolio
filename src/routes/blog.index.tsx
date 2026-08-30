@@ -150,7 +150,6 @@ function Journal() {
                       <span aria-hidden="true" className="h-3 w-px bg-border" />
                       <span>{featured.readingTime}</span>
                       <span aria-hidden="true" className="h-3 w-px bg-border" />
-                      <span className="text-accent">Draft</span>
                     </p>
                     <Button variant="teal" size="lg" className="mt-8" asChild>
                       <Link to="/blog/$slug" params={{ slug: featured.slug }}>

@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { Reveal } from "@/components/site/Reveal";
+import { ArticleImage } from "@/components/site/ArticleImage";
 import { getPost, getRelated } from "@/lib/blog-data";
 import portraitAsset from "@/assets/portrait-saianjuri.png.asset.json";
 
@@ -28,6 +29,21 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: d },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: `/blog/${loaderData.post.slug}` }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: loaderData.post.title,
+            description: d,
+            author: { "@type": "Person", name: "Dr. Sai Anjuri" },
+            datePublished: loaderData.post.date,
+            articleSection: loaderData.post.categoryLabel,
+          }),
+        },
       ],
     };
   },
