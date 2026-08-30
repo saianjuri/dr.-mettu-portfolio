@@ -20,7 +20,7 @@ export function FinalCta() {
             Ready to take the next step towards a healthier, stronger, and better you?
           </p>
           <Button variant="orange" size="xl" className="w-full sm:w-auto" asChild>
-            <a href="mailto:hello@drmettu.com">
+            <a href="mailto:hello@drsaianjuri.com">
               Book a Consultation <ArrowRight aria-hidden="true" />
             </a>
           </Button>

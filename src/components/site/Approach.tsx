@@ -16,7 +16,7 @@ export function Approach() {
         </Reveal>
         <Reveal delay={100} className="space-y-5 text-[1.02rem] leading-relaxed text-muted-foreground">
           <p>
-            Dr. Mettu is a Doctor of Pharmacy who works where clinical care, physical training and
+            Dr. Sai Anjuri is a Doctor of Pharmacy who works where clinical care, physical training and
             visual storytelling meet. His pharmacy background shapes an evidence-first approach to
             medication, health consultation and everyday wellbeing.
           </p>
