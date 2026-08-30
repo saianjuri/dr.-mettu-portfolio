@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const links: { label: string; to: string; hash?: string }[] = [
   { label: "About", to: "/about" },
-  { label: "Expertise", to: "/", hash: "expertise" },
+  { label: "Expertise", to: "/expertise" },
   { label: "Portfolio", to: "/", hash: "portfolio" },
   { label: "Blog", to: "/", hash: "blog" },
   { label: "Contact", to: "/", hash: "contact" },
