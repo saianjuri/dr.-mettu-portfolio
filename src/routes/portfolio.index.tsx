@@ -353,24 +353,18 @@ function Portfolio() {
                   const isTeal = area.accent === "teal";
                   return (
                     <Reveal key={area.key} delay={i * 70}>
-                      <article className="grid gap-8 border-t border-border/70 py-10 last:border-b lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)] lg:gap-16 lg:py-14">
-                        {/* refined neutral placeholder — replace with real imagery later */}
-                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[1rem] border border-border/70 bg-secondary/60">
+                      <article className="grid gap-6 border-t border-border/70 py-10 last:border-b lg:grid-cols-[minmax(0,220px)_minmax(0,1fr)] lg:gap-16 lg:py-14">
+                        <div className="flex items-start gap-3">
                           <span
                             aria-hidden="true"
-                            className={`absolute left-0 top-0 h-[3px] w-16 ${
-                              isTeal ? "bg-teal" : "bg-accent"
+                            className={`mt-1 grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-border/70 bg-card ${
+                              isTeal ? "text-teal" : "text-accent"
                             }`}
-                          />
-                          <div className="grid h-full w-full place-items-center">
-                            <area.icon
-                              size={30}
-                              strokeWidth={1.5}
-                              aria-hidden="true"
-                              className={isTeal ? "text-teal/50" : "text-accent/50"}
-                            />
-                          </div>
+                          >
+                            <area.icon size={18} strokeWidth={1.6} aria-hidden="true" />
+                          </span>
                         </div>
+
 
                         <div className="min-w-0">
                           <p
