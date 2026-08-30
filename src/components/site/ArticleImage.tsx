@@ -50,7 +50,6 @@ const compositions: Record<BlogCategory, React.ReactNode> = {
   ),
   creative: (
     <>
-      <span className="absolute inset-0 bg-[linear-gradient(0deg,transparent_calc(100%-1px),var(--tw-shadow-color)_0)]" />
       <span className="absolute left-[10%] top-[14%] h-[52%] w-[44%] border border-foreground/12" />
       <span className="absolute bottom-[14%] right-[12%] h-[46%] w-[34%] bg-accent/12" />
       <span className="absolute left-[38%] top-[38%] h-16 w-16 rounded-full border border-teal/45" />
