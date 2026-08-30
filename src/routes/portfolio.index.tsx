@@ -420,41 +420,16 @@ function Portfolio() {
                 </p>
               </Reveal>
 
-              {/* Asymmetric editorial gallery frame — ready for real images.
-                  Drop images in with object-cover; each slot keeps its own ratio. */}
-              <Reveal delay={80} className="mt-12">
-                <div className="grid gap-4 sm:grid-cols-3 sm:gap-5">
-                  {[
-                    "sm:col-span-2 aspect-[16/10]",
-                    "aspect-[4/5]",
-                    "aspect-[4/5]",
-                    "sm:col-span-2 aspect-[16/10]",
-                  ].map((shape, i) => (
-                    <div
-                      key={i}
-                      className={`relative overflow-hidden rounded-[1rem] border border-border/70 bg-secondary/50 ${shape}`}
-                    >
-                      <span
-                        aria-hidden="true"
-                        className={`absolute left-0 top-0 h-[3px] w-12 ${
-                          i % 2 === 0 ? "bg-accent" : "bg-teal"
-                        }`}
-                      />
-                      <div className="grid h-full w-full place-items-center">
-                        <Camera
-                          size={26}
-                          strokeWidth={1.5}
-                          aria-hidden="true"
-                          className="text-muted-foreground/35"
-                        />
-                      </div>
-                    </div>
-                  ))}
+              {/* Minimal empty state — replaced by a real gallery once images are ready. */}
+              <Reveal delay={80} className="mt-10">
+                <div className="flex flex-col gap-4 border-t border-border/70 pt-6 sm:flex-row sm:items-center sm:justify-between">
+                  <p className="inline-flex items-center gap-3 text-[0.8125rem] uppercase tracking-[0.16em] text-muted-foreground">
+                    <Camera size={16} strokeWidth={1.6} aria-hidden="true" className="text-accent" />
+                    Selected work coming soon
+                  </p>
                 </div>
-                <p className="mt-8 text-[0.8125rem] uppercase tracking-[0.16em] text-muted-foreground">
-                  Selected work coming soon
-                </p>
               </Reveal>
+
             </div>
           </section>
         ) : null}
