@@ -21,6 +21,34 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Dr. Sai Anjuri",
+          jobTitle: "Doctor of Pharmacy (PharmD)",
+          description,
+          knowsAbout: ["Pharmacy", "Fitness", "Nutrition", "Photography"],
+          alumniOf: [
+            {
+              "@type": "EducationalOrganization",
+              name: "J. Sikile School, Narsapur Roypeta",
+            },
+            {
+              "@type": "EducationalOrganization",
+              name: "Chaitanya Junior College, Palakollu",
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              name: "Jawaharlal Nehru Technological University, Hyderabad",
+            },
+          ],
+          url: "/about",
+        }),
+      },
+    ],
   }),
   component: About,
 });
