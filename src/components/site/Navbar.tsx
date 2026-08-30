@@ -31,7 +31,7 @@ export function Navbar() {
             <li key={link.label}>
               <Link
                 to={link.to}
-                hash={link.hash}
+                {...(link.hash ? { hash: link.hash } : {})}
                 className="relative py-1 text-[0.8125rem] font-medium tracking-[0.02em] text-foreground/75 transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-teal after:transition-transform after:duration-300 hover:text-teal-deep hover:after:scale-x-100 focus-visible:text-teal-deep focus-visible:outline-none"
               >
                 {link.label}
