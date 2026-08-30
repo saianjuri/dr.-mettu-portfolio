@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
-import portraitAsset from "@/assets/portrait-drmettu.png.asset.json";
+import portraitAsset from "@/assets/portrait-saianjuri.png.asset.json";
 
 const portraitUrl = portraitAsset.url;
 
@@ -72,7 +72,7 @@ export function Hero() {
                 alt="Portrait of Dr. Sai Anjuri, PharmD"
                 loading="eager"
                 decoding="async"
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-cover object-[center_30%]"
               />
             </div>
           </div>
