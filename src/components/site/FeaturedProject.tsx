@@ -12,7 +12,7 @@ const meta = [
 
 export function FeaturedProject() {
   return (
-    <section id="portfolio" className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+    <section id="portfolio" className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
       <Reveal className="max-w-xl">
         <p className="eyebrow flex items-center gap-3 text-accent">
           <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
@@ -35,7 +35,7 @@ export function FeaturedProject() {
           </figure>
 
           <div className="min-w-0">
-            <h2 className="max-w-[38ch] text-[1.45rem] font-extrabold leading-[1.25] tracking-[-0.015em] lg:text-[1.9rem]">
+            <h2 className="max-w-[38ch] heading-section">
               From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through Effective
               Counselling Strategies
             </h2>
@@ -46,7 +46,7 @@ export function FeaturedProject() {
                   <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                     {item.label}
                   </dt>
-                  <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">{item.text}</dd>
+                  <dd className="text-[1rem] leading-relaxed text-foreground/85">{item.text}</dd>
                 </div>
               ))}
             </dl>
@@ -56,7 +56,7 @@ export function FeaturedProject() {
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-teal-deep">
                   Hospital Guide
                 </p>
-                <p className="mt-1.5 text-[0.9375rem] font-semibold">Dr. Aparna Padala, MBBS, MS</p>
+                <p className="mt-1.5 text-[1rem] font-semibold">Dr. Aparna Padala, MBBS, MS</p>
                 <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
                   Professor, Department of Obstetrics and Gynaecology
                   <br />
@@ -67,7 +67,7 @@ export function FeaturedProject() {
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent">
                   Institutional Guide
                 </p>
-                <p className="mt-1.5 text-[0.9375rem] font-semibold">Dr. B. Raja Rajeshwari, Pharm D</p>
+                <p className="mt-1.5 text-[1rem] font-semibold">Dr. B. Raja Rajeshwari, Pharm D</p>
                 <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
                   Assistant Professor, Department of Pharmacy Practice
                   <br />

@@ -161,12 +161,12 @@ function DissertationCaseStudy() {
                   <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                   Academic Project
                 </p>
-                <h1 className="mt-6 max-w-[34ch] text-[1.6rem] font-extrabold leading-[1.22] tracking-[-0.018em] sm:text-[2.1rem] lg:text-[2.5rem]">
+                <h1 className="mt-6 max-w-[34ch] heading-page">
                   From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through
                   Effective Counselling Strategies
                 </h1>
 
-                <p className="mt-6 max-w-[58ch] text-[0.9875rem] leading-[1.8] text-muted-foreground">
+                <p className="mt-6 max-w-[58ch] text-[1rem] leading-[1.8] text-muted-foreground">
                   An academic dissertation focused on counselling strategies for promoting healthy
                   early pregnancy and addressing pregnancy-related complications.
                 </p>
@@ -177,7 +177,7 @@ function DissertationCaseStudy() {
 
         {/* Project overview */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-md">
             <Reveal>
               <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Project Overview
@@ -190,7 +190,7 @@ function DissertationCaseStudy() {
                     <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
                       {item.label}
                     </dt>
-                    <dd className="max-w-[70ch] text-[0.9375rem] leading-relaxed text-foreground/85">
+                    <dd className="max-w-[70ch] text-[1rem] leading-relaxed text-foreground/85">
                       {item.value}
                     </dd>
                   </div>
@@ -201,7 +201,7 @@ function DissertationCaseStudy() {
                   <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
                     Project Team
                   </dt>
-                  <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">
+                  <dd className="text-[1rem] leading-relaxed text-foreground/85">
                     <ul className="flex flex-wrap gap-x-7 gap-y-1">
                       {team.map((name) => (
                         <li key={name}>{name}</li>
@@ -216,7 +216,7 @@ function DissertationCaseStudy() {
 
         {/* Aims & objectives */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)] lg:gap-16">
               <Reveal>
                 <p className="eyebrow flex items-center gap-3 text-accent">
@@ -226,7 +226,7 @@ function DissertationCaseStudy() {
                 <h2 className="mt-5 text-[1.5rem] font-extrabold tracking-[-0.015em] lg:text-[1.9rem]">
                   Aim
                 </h2>
-                <p className="mt-4 max-w-[42ch] text-[0.9875rem] leading-[1.8] text-muted-foreground">
+                <p className="mt-4 max-w-[42ch] text-[1rem] leading-[1.8] text-muted-foreground">
                   To develop and evaluate counselling strategies aimed at reducing early pregnancy
                   complications.
                 </p>
@@ -250,7 +250,7 @@ function DissertationCaseStudy() {
                       >
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <span className="max-w-[60ch] text-[0.9375rem] leading-relaxed text-foreground/85">
+                      <span className="max-w-[60ch] text-[1rem] leading-relaxed text-foreground/85">
                         {o}
                       </span>
                     </li>
@@ -263,7 +263,7 @@ function DissertationCaseStudy() {
 
         {/* Methodology */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-md">
             <Reveal>
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
@@ -277,7 +277,7 @@ function DissertationCaseStudy() {
                     <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
                       {m.label}
                     </p>
-                    <p className="mt-2.5 max-w-[52ch] text-[0.9375rem] leading-relaxed text-foreground/85">
+                    <p className="mt-2.5 max-w-[52ch] text-[1rem] leading-relaxed text-foreground/85">
                       {m.value}
                     </p>
                   </div>
@@ -289,16 +289,16 @@ function DissertationCaseStudy() {
 
         {/* Key findings */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="max-w-xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 Results
               </p>
-              <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+              <h2 className="mt-5 heading-section">
                 Key Findings
               </h2>
-              <p className="mt-5 text-[0.9375rem] leading-relaxed text-muted-foreground">
+              <p className="mt-5 text-[1rem] leading-relaxed text-muted-foreground">
                 Study population: <span className="font-semibold text-foreground">100 subjects</span>
               </p>
             </Reveal>
@@ -346,17 +346,17 @@ function DissertationCaseStudy() {
 
         {/* Full document */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-md">
             <Reveal>
               <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_auto]">
                 <div className="min-w-0">
                   <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                     Document
                   </p>
-                  <h2 className="mt-3 text-[1.4rem] font-extrabold tracking-[-0.015em] lg:text-[1.8rem]">
+                  <h2 className="mt-3 heading-card">
                     Read the full dissertation
                   </h2>
-                  <p className="mt-3 max-w-[54ch] text-[0.9375rem] leading-relaxed text-muted-foreground">
+                  <p className="mt-3 max-w-[54ch] text-[1rem] leading-relaxed text-muted-foreground">
                     The complete project report opens in a new tab.
                   </p>
                 </div>
@@ -372,7 +372,7 @@ function DissertationCaseStudy() {
 
         {/* Academic guidance */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-12 lg:px-8 lg:py-14">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-sm">
             <Reveal>
               <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Academic Guidance
@@ -393,7 +393,7 @@ function DissertationCaseStudy() {
                     >
                       {g.role}
                     </p>
-                    <p className="mt-1.5 text-[0.9375rem] font-semibold">{g.name}</p>
+                    <p className="mt-1.5 text-[1rem] font-semibold">{g.name}</p>
                     <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
                       {g.lines[0]}
                       <br />
@@ -406,14 +406,14 @@ function DissertationCaseStudy() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
           <Reveal>
             <div className="grid items-center gap-8 rounded-xl bg-teal px-7 py-11 text-primary-foreground sm:px-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14 lg:py-14">
               <div className="min-w-0">
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
                   Academic &amp; Professional Enquiries
                 </p>
-                <h2 className="mt-3 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+                <h2 className="mt-3 heading-section">
                   Get In Touch
                 </h2>
                 <span aria-hidden="true" className="mt-5 block h-px w-16 bg-primary-foreground/30" />

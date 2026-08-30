@@ -68,7 +68,7 @@ export function Navbar() {
                   to={link.to}
                   {...(link.hash ? { hash: link.hash } : {})}
                   onClick={() => setOpen(false)}
-                  className="block border-b border-border/50 px-1 py-3 text-[0.95rem] font-medium text-foreground/85 transition-colors hover:text-teal-deep"
+                  className="block border-b border-border/50 px-1 py-3 text-[1rem] font-medium text-foreground/85 transition-colors hover:text-teal-deep"
                 >
                   {link.label}
                 </Link>

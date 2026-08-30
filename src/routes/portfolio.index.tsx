@@ -110,19 +110,19 @@ function Portfolio() {
       <main>
         {/* ————— Hero ————— */}
         <section>
-          <div className="mx-auto max-w-[1200px] px-6 pb-12 pt-12 lg:px-8 lg:pb-16 lg:pt-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 hero-pad">
             <Reveal className="max-w-3xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 Selected Work
               </p>
-              <h1 className="mt-6 text-[2.15rem] font-extrabold leading-[1.1] tracking-[-0.02em] sm:text-[2.9rem] lg:text-[3.25rem]">
+              <h1 className="mt-6 heading-page">
                 Work, Research &amp;
                 <br />
                 <span className="text-teal-deep">Creative Pursuits</span>
               </h1>
               <div aria-hidden="true" className="mt-7 h-px w-full max-w-md bg-border/70" />
-              <p className="mt-6 max-w-[38rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
+              <p className="mt-6 max-w-[38rem] text-[1.0625rem] leading-[1.75] text-muted-foreground">
                 A curated collection of academic research, professional interests, fitness,
                 nutrition, and creative work.
               </p>
@@ -164,7 +164,7 @@ function Portfolio() {
         {/* ————— Featured research project ————— */}
         {showResearch ? (
           <section>
-            <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+            <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
               <Reveal className="max-w-xl">
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   Featured — Research / Academic
@@ -197,7 +197,7 @@ function Portfolio() {
                       <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                       Academic Project
                     </p>
-                    <h2 className="mt-5 max-w-[36ch] text-[1.5rem] font-extrabold leading-[1.25] tracking-[-0.018em] lg:text-[2.05rem]">
+                    <h2 className="mt-5 max-w-[36ch] heading-section">
                       From Prevalence to Prevention – Ensuring Healthy Early Pregnancy Through
                       Effective Counselling Strategies
                     </h2>
@@ -218,14 +218,14 @@ function Portfolio() {
                           <dt className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                             {item.label}
                           </dt>
-                          <dd className="text-[0.9375rem] leading-relaxed text-foreground/85">
+                          <dd className="text-[1rem] leading-relaxed text-foreground/85">
                             {item.text}
                           </dd>
                         </div>
                       ))}
                     </dl>
 
-                    <p className="mt-7 max-w-[58ch] text-[0.95rem] leading-[1.8] text-muted-foreground">
+                    <p className="mt-7 max-w-[58ch] text-[1rem] leading-[1.8] text-muted-foreground">
                       An academic dissertation focused on counselling strategies for promoting
                       healthy early pregnancy and addressing pregnancy-related complications.
                     </p>
@@ -246,7 +246,7 @@ function Portfolio() {
         {/* ————— Research focus ————— */}
         {showResearch ? (
           <section className="border-t border-border/60 bg-card/40">
-            <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+            <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-md">
               <div className="grid gap-8 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)] lg:gap-16">
                 <Reveal>
                   <p className="eyebrow flex items-center gap-3 text-accent">
@@ -255,7 +255,7 @@ function Portfolio() {
                   </p>
                 </Reveal>
                 <Reveal delay={70}>
-                  <p className="max-w-[60ch] text-[1.0125rem] leading-[1.8] text-muted-foreground">
+                  <p className="max-w-[60ch] text-[1.0625rem] leading-[1.8] text-muted-foreground">
                     The dissertation focuses on counselling strategies relevant to early pregnancy,
                     moving from an understanding of prevalence towards preventive, patient-centred
                     guidance. The work was carried out within the Department of Pharmacy Practice
@@ -270,7 +270,7 @@ function Portfolio() {
         {/* ————— Project details ————— */}
         {showResearch ? (
           <section className="border-t border-border/60">
-            <div className="mx-auto max-w-[1200px] px-6 py-14 lg:px-8 lg:py-16">
+            <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-md">
               <Reveal>
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   Project Details
@@ -283,7 +283,7 @@ function Portfolio() {
                       <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
                         {d.label}
                       </p>
-                      <p className="mt-2.5 text-[0.9375rem] leading-relaxed text-foreground/85">
+                      <p className="mt-2.5 text-[1rem] leading-relaxed text-foreground/85">
                         {d.value}
                       </p>
                     </div>
@@ -297,7 +297,7 @@ function Portfolio() {
         {/* ————— Academic guidance ————— */}
         {showResearch ? (
           <section className="border-t border-border/60">
-            <div className="mx-auto max-w-[1200px] px-6 py-12 lg:px-8 lg:py-14">
+            <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-sm">
               <Reveal>
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   Academic Guidance
@@ -318,7 +318,7 @@ function Portfolio() {
                       >
                         {g.role}
                       </p>
-                      <p className="mt-1.5 text-[0.9375rem] font-semibold">{g.name}</p>
+                      <p className="mt-1.5 text-[1rem] font-semibold">{g.name}</p>
                       <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
                         {g.lines[0]}
                         <br />
@@ -335,14 +335,14 @@ function Portfolio() {
         {/* ————— Other portfolio areas: fitness & nutrition ————— */}
         {visibleAreas.length ? (
           <section className="border-t border-border/60">
-            <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+            <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
               {active === "all" ? (
                 <Reveal className="max-w-xl">
                   <p className="eyebrow flex items-center gap-3 text-accent">
                     <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                     Other Areas
                   </p>
-                  <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+                  <h2 className="mt-5 heading-section">
                     In Progress
                   </h2>
                 </Reveal>
@@ -380,10 +380,10 @@ function Portfolio() {
                           >
                             {area.label}
                           </p>
-                          <h3 className="mt-3 text-[1.35rem] font-extrabold tracking-[-0.015em] lg:text-[1.75rem]">
+                          <h3 className="mt-3 heading-card lg:text-[1.75rem]">
                             {area.heading}
                           </h3>
-                          <p className="mt-4 max-w-[52ch] text-[0.95rem] leading-[1.8] text-muted-foreground">
+                          <p className="mt-4 max-w-[52ch] text-[1rem] leading-[1.8] text-muted-foreground">
                             {area.text}
                           </p>
                           <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-border/70 pt-5">
@@ -412,16 +412,16 @@ function Portfolio() {
         {/* ————— Photography gallery ————— */}
         {showPhotography ? (
           <section className="border-t border-border/60 bg-card/40">
-            <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+            <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
               <Reveal className="max-w-xl">
                 <p className="eyebrow flex items-center gap-3 text-accent">
                   <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                   Photography
                 </p>
-                <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+                <h2 className="mt-5 heading-section">
                   Creative Photography
                 </h2>
-                <p className="mt-4 max-w-[48ch] text-[0.95rem] leading-[1.8] text-muted-foreground">
+                <p className="mt-4 max-w-[48ch] text-[1rem] leading-[1.8] text-muted-foreground">
                   Portraits, lifestyle and visual storytelling.
                 </p>
               </Reveal>
@@ -466,18 +466,18 @@ function Portfolio() {
         ) : null}
 
         {/* ————— CTA ————— */}
-        <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
           <Reveal>
             <div className="grid items-center gap-8 rounded-xl bg-teal px-7 py-11 text-primary-foreground sm:px-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14 lg:py-14">
               <div className="min-w-0">
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
                   Consult. Train. Transform.
                 </p>
-                <h2 className="mt-3 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+                <h2 className="mt-3 heading-section">
                   Let&apos;s Work Together
                 </h2>
                 <span aria-hidden="true" className="mt-5 block h-px w-16 bg-primary-foreground/30" />
-                <p className="mt-5 max-w-md text-[0.9375rem] leading-relaxed text-primary-foreground/85">
+                <p className="mt-5 max-w-md text-[1rem] leading-relaxed text-primary-foreground/85">
                   Interested in collaborating on research, training, nutrition or creative work?
                 </p>
               </div>

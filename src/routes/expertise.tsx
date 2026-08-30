@@ -117,7 +117,7 @@ function Expertise() {
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 Expertise
               </p>
-              <h1 className="mt-6 text-[2.15rem] font-extrabold leading-[1.1] tracking-[-0.02em] sm:text-[2.9rem] lg:text-[3.25rem]">
+              <h1 className="mt-6 heading-page">
                 Knowledge That Connects
                 <br />
                 <span className="text-teal-deep">Health, Performance &amp; Creativity</span>
@@ -125,7 +125,7 @@ function Expertise() {
 
               <div aria-hidden="true" className="mt-7 h-px w-full max-w-md bg-border/70" />
 
-              <p className="mt-6 max-w-[34rem] text-[1.0125rem] leading-[1.75] text-muted-foreground">
+              <p className="mt-6 max-w-[34rem] text-[1.0625rem] leading-[1.75] text-muted-foreground">
                 An interdisciplinary approach shaped by pharmaceutical education, fitness experience, nutrition, and
                 creative visual storytelling.
               </p>
@@ -161,13 +161,13 @@ function Expertise() {
 
         {/* ————— Expertise overview: four editorial sections ————— */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="max-w-xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 Areas of Expertise
               </p>
-              <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+              <h2 className="mt-5 heading-section">
                 Four Disciplines, One Perspective
               </h2>
             </Reveal>
@@ -210,11 +210,11 @@ function Expertise() {
                           >
                             <area.icon size={20} strokeWidth={1.8} aria-hidden="true" />
                           </span>
-                          <h3 className="text-[1.35rem] font-extrabold tracking-[-0.015em] lg:text-[1.6rem]">
+                          <h3 className="heading-card lg:text-[1.6rem]">
                             {area.heading}
                           </h3>
                         </div>
-                        <p className="mt-5 max-w-[52ch] text-[0.95rem] leading-[1.8] text-muted-foreground">
+                        <p className="mt-5 max-w-[52ch] text-[1rem] leading-[1.8] text-muted-foreground">
                           {area.description}
                         </p>
                       </div>
@@ -251,14 +251,14 @@ function Expertise() {
 
         {/* ————— Expertise matrix ————— */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="mx-auto max-w-xl text-center">
               <p className="eyebrow flex items-center justify-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 The Connection
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
               </p>
-              <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+              <h2 className="mt-5 heading-section">
                 One Identity, Four Disciplines
               </h2>
             </Reveal>
@@ -309,13 +309,13 @@ function Expertise() {
 
         {/* ————— Where these disciplines meet ————— */}
         <section className="border-t border-border/60">
-          <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="max-w-xl">
               <p className="eyebrow flex items-center gap-3 text-accent">
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 Intersection
               </p>
-              <h2 className="mt-5 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+              <h2 className="mt-5 heading-section">
                 Where These Disciplines Meet
               </h2>
             </Reveal>
@@ -327,7 +327,7 @@ function Expertise() {
                     <h3 className="text-[0.8125rem] font-extrabold uppercase tracking-[0.18em] text-foreground">
                       {c.title}
                     </h3>
-                    <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground">{c.text}</p>
+                    <p className="mt-3 text-[1rem] leading-relaxed text-muted-foreground">{c.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -337,13 +337,13 @@ function Expertise() {
 
         {/* ————— Professional philosophy ————— */}
         <section className="border-t border-border/60 bg-card/40">
-          <div className="mx-auto max-w-[1200px] px-6 py-20 lg:px-8 lg:py-28">
+          <div className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
             <Reveal className="mx-auto max-w-3xl text-center">
               <span aria-hidden="true" className="mx-auto block h-[3px] w-14 rounded-full bg-accent" />
               <p className="mt-8 text-[1.55rem] font-bold leading-[1.4] tracking-[-0.015em] text-foreground sm:text-[1.9rem] lg:text-[2.25rem]">
                 Evidence. Discipline. <span className="text-teal-deep">Creativity.</span>
               </p>
-              <p className="mx-auto mt-6 max-w-xl text-[1.0125rem] leading-[1.75] text-muted-foreground">
+              <p className="mx-auto mt-6 max-w-xl text-[1.0625rem] leading-[1.75] text-muted-foreground">
                 Three ideas that shape the way I approach healthcare knowledge, physical development, nutrition, and
                 visual storytelling.
               </p>
@@ -352,18 +352,18 @@ function Expertise() {
         </section>
 
         {/* ————— CTA ————— */}
-        <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-8 lg:py-24">
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
           <Reveal>
             <div className="grid items-center gap-8 rounded-xl bg-teal px-7 py-11 text-primary-foreground sm:px-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14 lg:py-14">
               <div className="min-w-0">
                 <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">
                   From Knowledge to Practice
                 </p>
-                <h2 className="mt-3 text-[1.7rem] font-extrabold tracking-[-0.015em] lg:text-[2.15rem]">
+                <h2 className="mt-3 heading-section">
                   Explore the Work
                 </h2>
                 <span aria-hidden="true" className="mt-5 block h-px w-16 bg-primary-foreground/30" />
-                <p className="mt-5 max-w-md text-[0.9375rem] leading-relaxed text-primary-foreground/85">
+                <p className="mt-5 max-w-md text-[1rem] leading-relaxed text-primary-foreground/85">
                   Discover academic projects, creative work and professional interests.
                 </p>
               </div>

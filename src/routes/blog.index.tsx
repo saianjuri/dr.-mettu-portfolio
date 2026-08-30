@@ -59,7 +59,7 @@ function Journal() {
                 <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
                 The Journal
               </p>
-              <h1 className="mt-6 text-[2.4rem] font-extrabold leading-[1.07] tracking-[-0.025em] sm:text-[3.25rem] lg:text-[3.75rem]">
+              <h1 className="mt-6 heading-hero">
                 Thoughts on Health,
                 <br />
                 <span className="text-teal-deep">Performance &amp; Life</span>
@@ -133,7 +133,7 @@ function Journal() {
                     <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-teal-deep">
                       {featured.categoryLabel}
                     </p>
-                    <h2 className="mt-4 max-w-[22ch] text-[1.75rem] font-extrabold leading-[1.18] tracking-[-0.02em] lg:text-[2.35rem]">
+                    <h2 className="mt-4 max-w-[22ch] heading-section">
                       <Link
                         to="/blog/$slug"
                         params={{ slug: featured.slug }}
@@ -142,7 +142,7 @@ function Journal() {
                         {featured.title}
                       </Link>
                     </h2>
-                    <p className="mt-5 max-w-[52ch] text-[1.0125rem] leading-[1.8] text-muted-foreground">
+                    <p className="mt-5 max-w-[52ch] text-[1.0625rem] leading-[1.8] text-muted-foreground">
                       {featured.excerpt}
                     </p>
                     <p className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.75rem] uppercase tracking-[0.14em] text-muted-foreground">
@@ -223,7 +223,7 @@ function Journal() {
                 ))}
               </div>
             ) : (
-              <p className="mt-10 text-[0.9375rem] text-muted-foreground">
+              <p className="mt-10 text-[1rem] text-muted-foreground">
                 No articles in this category yet.
               </p>
             )}
@@ -236,14 +236,14 @@ function Journal() {
             <Reveal>
               <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-14">
                 <div className="min-w-0">
-                  <h2 className="text-[1.7rem] font-extrabold tracking-[-0.02em] lg:text-[2.1rem]">
+                  <h2 className="heading-section">
                     Stay Curious
                   </h2>
                   <span aria-hidden="true" className="mt-4 flex items-center">
                     <span className="block h-px w-16 bg-teal" />
                     <span className="block h-px w-6 bg-accent" />
                   </span>
-                  <p className="mt-5 max-w-[46ch] text-[1.0125rem] leading-[1.8] text-muted-foreground">
+                  <p className="mt-5 max-w-[46ch] text-[1.0625rem] leading-[1.8] text-muted-foreground">
                     Follow along for new perspectives on health, fitness, nutrition and creative
                     work.
                   </p>

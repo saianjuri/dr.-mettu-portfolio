@@ -40,7 +40,7 @@ const REASONS = [
 ];
 
 const inputClasses =
-  "w-full rounded-lg border border-input bg-card px-4 py-3 text-[0.9375rem] text-foreground shadow-[0_1px_2px_oklch(0.21_0.006_250/0.04)] transition-colors placeholder:text-muted-foreground/70 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal/40";
+  "w-full rounded-lg border border-input bg-card px-4 py-3 text-[1rem] text-foreground shadow-[0_1px_2px_oklch(0.21_0.006_250/0.04)] transition-colors placeholder:text-muted-foreground/70 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal/40";
 
 const labelClasses =
   "mb-2 block text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-foreground/70";
@@ -58,17 +58,17 @@ function ContactPage() {
       <Navbar />
       <main>
         {/* Page header */}
-        <section className="mx-auto max-w-[1200px] px-6 pb-12 pt-14 lg:px-8 lg:pb-16 lg:pt-20">
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-8 hero-pad">
           <Reveal>
             <p className="eyebrow flex items-center gap-3 text-accent">
               <span aria-hidden="true" className="h-px w-7 bg-accent/60" />
               Contact &amp; Consultation
             </p>
-            <h1 className="mt-6 max-w-2xl text-[2.15rem] font-extrabold leading-[1.12] tracking-[-0.02em] text-teal-deep sm:text-[2.7rem]">
+            <h1 className="mt-6 max-w-2xl heading-page text-teal-deep">
               Let&apos;s Start a Conversation
             </h1>
             <span aria-hidden="true" className="mt-7 block h-px w-16 bg-accent/60" />
-            <p className="mt-6 max-w-xl text-[1.0125rem] leading-[1.75] text-muted-foreground">
+            <p className="mt-6 max-w-xl text-[1.0625rem] leading-[1.75] text-muted-foreground">
               Whether you&apos;re looking to connect for a consultation, fitness and nutrition
               guidance, creative collaboration, or simply want to get in touch, feel free to reach
               out.
@@ -77,11 +77,11 @@ function ContactPage() {
         </section>
 
         {/* Two-column contact layout */}
-        <section className="mx-auto max-w-[1200px] px-6 pb-20 lg:px-8 lg:pb-28">
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-8 section-lg">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             {/* Left — contact information */}
             <Reveal className="min-w-0">
-              <h2 className="text-[1.35rem] font-extrabold tracking-[-0.015em] text-teal-deep">
+              <h2 className="heading-card text-teal-deep">
                 Get In Touch
               </h2>
               <span aria-hidden="true" className="mt-4 block h-px w-10 bg-teal/50" />
@@ -96,7 +96,7 @@ function ContactPage() {
                       <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                         {label}
                       </p>
-                      <p className="mt-1 text-[0.9375rem] font-medium text-foreground/90">
+                      <p className="mt-1 text-[1rem] font-medium text-foreground/90">
                         {value}
                       </p>
                     </div>
@@ -137,7 +137,7 @@ function ContactPage() {
                 onSubmit={handleSubmit}
                 className="rounded-xl border border-border/70 bg-card p-7 shadow-[var(--shadow-card)] sm:p-9"
               >
-                <h2 className="text-[1.15rem] font-extrabold tracking-[-0.015em] text-teal-deep">
+                <h2 className="heading-card text-teal-deep">
                   Consultation Enquiry
                 </h2>
                 <span aria-hidden="true" className="mt-3 block h-px w-10 bg-accent/60" />
